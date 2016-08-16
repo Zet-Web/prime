@@ -3347,26 +3347,26 @@
 /* Icon Down */
 @-webkit-keyframes hvr-icon-down {
   0%,
-	50%,
-	100% {
+  50%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   25%,
-	75% {
+  75% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
 }
 @keyframes hvr-icon-down {
   0%,
-	50%,
-	100% {
+  50%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   25%,
-	75% {
+  75% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
   }
@@ -3408,26 +3408,26 @@
 /* Icon Up */
 @-webkit-keyframes hvr-icon-up {
   0%,
-	50%,
-	100% {
+  50%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   25%,
-	75% {
+  75% {
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
   }
 }
 @keyframes hvr-icon-up {
   0%,
-	50%,
-	100% {
+  50%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   25%,
-	75% {
+  75% {
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
   }
@@ -3511,7 +3511,7 @@
     transform: translateY(-100%);
   }
   51%,
-	100% {
+  100% {
     opacity: 1;
   }
 }
@@ -3525,7 +3525,7 @@
     transform: translateY(-100%);
   }
   51%,
-	100% {
+  100% {
     opacity: 1;
   }
 }
@@ -5736,6 +5736,9 @@ body:after {
 /* line 962, ../sass/style.scss */
 .logo {
   width: 250px;
+  position: relative;
+  top: 6px;
+  left: 9px;
 }
 /* line 964, ../sass/style.scss */
 .logo img {
@@ -5762,6 +5765,8 @@ body:after {
   width: 230px;
   float: left;
   margin-right: 1.69492%;
+  position: relative;
+  left: 13px;
 }
 
 /* line 981, ../sass/style.scss */
