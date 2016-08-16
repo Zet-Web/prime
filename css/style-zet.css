@@ -6213,13 +6213,15 @@ body.ready:before {
 /* line 1347, ../sass/style.scss */
 .row.more {
   margin-top: 8px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
 /* line 1351, ../sass/style.scss */
 .content .icons .icon p.small.t-u {
   color: #464658;
+  font-size: 12px;
+  top: 0;
 }
 
 /* line 1355, ../sass/style.scss */
@@ -6296,8 +6298,15 @@ body.ready:before {
 
 /* line 1376, ../sass/style.scss */
 .content .price .container .row .cost-box h4 {
-  letter-spacing: 0.025em;
+  letter-spacing: 0.05px;
   font-size: 20px;
+  margin-top: -2px;
+  margin-bottom: 9px;
+  margin-left: 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
 }
 
 /* line 1381, ../sass/style.scss */

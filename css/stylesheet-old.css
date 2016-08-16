@@ -372,7 +372,9 @@
   display: none;
   }
 
-  .item {height:500px;
+  .item {
+  height:500px;
+  position: relative;
   }
 
   .owl-controls .owl-page.active span {

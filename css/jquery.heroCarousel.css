@@ -9,7 +9,7 @@
 	.hero-carousel article {
 		width: 980px;
 		margin: 0 auto;
-		height: 480px;
+		height: 100%;
 		display: block;
 		float: left;
 		position: relative;
@@ -90,4 +90,19 @@
 			.hero-carousel-nav li a:focus {
 				border: none;
 				outline: none;
+				}
+				.slider-wrap .item .caption.animate-me p {
+					display: block;
+					margin-bottom: 0;
+					position: relative;
+					top: 30px;
+					letter-spacing: 0.2px;
+					left: 9px;
+					font-size: 36px;
+				}
+				.content .item .caption  .bold {
+					left: 10px;
+					position: relative;
+					height: 50px;
+					display: block;
 				}

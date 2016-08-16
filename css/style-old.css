@@ -724,10 +724,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  /* font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; */
   font-size: 1em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  }
 
 p {
   margin: 0 0 0.75em; }
@@ -764,10 +765,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  /* font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; */
   font-size: 1em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  }
 
 p {
   margin: 0 0 0.75em; }
@@ -2101,7 +2103,9 @@ footer {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  height: 582px;
+  }
   .hero .hero-logo img {
     height: 4em;
     margin-bottom: 1em; }
@@ -2267,7 +2271,8 @@ footer {
   font-size: 14px;
   line-height: 21px;
   padding-top: 8px;
-  margin-left: 46px;; }
+  margin-left: 90px;
+  }
   .call-spec:hover {
     background-color: #00ca90; }
 
@@ -2284,12 +2289,15 @@ footer {
   display: inline-block;
   text-align: center;
   font-size: 14px;
-  line-height: 30px; }
+  line-height: 30px;
+  margin-left: 31px;
+  }
   .get-cost:hover {
     background-color: #00afc8; }
 
 header .top-header {
-  padding-top: 15px; }
+  padding-top: 0;
+  }
 header .description {
   font-size: 0.875em;
   line-height: 1.125em;
@@ -2316,7 +2324,8 @@ header .feedback {
   top: 11px; }
 header .main-menu {
   background-color: #464658;
-  margin-top: 20px; }
+  margin-top: 13px;
+  }
   header .main-menu ul {
     height: 40px;
     position: relative;
@@ -2388,10 +2397,16 @@ header .main-menu {
   letter-spacing: 0;
   font-size: 22px; }
 .content #slider .container {
-  position: relative;
-  z-index: 999;
-  margin: auto;
-  top: -350px; }
+  position: absolute;
+  /* z-index: 999; */
+  margin: 0;
+  top: 10px;
+  width: 530px;
+  max-width: none;
+  height: 360px;
+  left: 50%;
+  margin-left: -500px;
+  }
   .content #slider .container .icons .icon {
     text-align: left; }
     .content #slider .container .icons .icon img {
@@ -2405,16 +2420,18 @@ header .main-menu {
   font-size: 2.25em;
   line-height: 2.625rem;
   color: #464658;
-  /* float: left; */
+  float: none;
   display: block;
   margin-right: 0.20367%;
-  width: 66.59878%;
-  position: relative;
-  top: -74px;
+  width: 100%;
+  /* position: relative; */
+  /* top: -74px; */
   background-color: transparent;
   letter-spacing: 0;
-  left: 10px;
-  height: 340px;
+  /* left: 10px; */
+  height: 100%;
+  padding: 0;
+  top: 45px;
   }
   .content .caption:last-child {
     margin-right: 0; }
@@ -2436,7 +2453,7 @@ header .main-menu {
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
-  margin-top: 16px;
+  margin-top: 6px;
   letter-spacing: -0.4px;
   text-indent: 16px;
   }
@@ -2480,7 +2497,17 @@ header .main-menu {
   margin-right: 0.20367%;
   width: 33.19756%;
   height: 420px;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  }
+  .content .price .container .row .cost-box .cost-imgboxlayer {
+    /* position:absolute; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-height: 217px;
+    margin-bottom: 5px;
+  }
   .content .price .container .row .cost-box:last-child {
     margin-right: 0; }
   .content .price .container .row .cost-box h4 {
@@ -2488,7 +2515,9 @@ header .main-menu {
     font-size: 1.25em;
     line-height: 1.5rem;
     color: #FFF;
-    color: #464658; }
+    color: #464658;
+    font-size: 20px;
+    }
   .content .price .container .row .cost-box .desc {
     color: #747482;
     font-size: 14px;
@@ -2498,7 +2527,9 @@ header .main-menu {
   .content .price .container .row .cost-box .price {
     color: #00a676;
     font-size: 18px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 3px;
+    }
     .content .price .container .row .cost-box .price span {
       color: #00a676;
       font-size: 28px;
@@ -2513,14 +2544,23 @@ header .main-menu {
   .content .who_we_are .base-title.white {
     font-weight: bold;
     color: #FFF;
-    margin: 15px 0; }
+    margin: 13px 0px 38px 0px;
+    letter-spacing: -0.2px;
+    text-indent: 23px;
+    margin-bottom: 0;
+    /* display: block; */
+    }
   .content .who_we_are .base-p {
     text-align: center;
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    letter-spacing: 0.3px;
+    text-indent: 22px;
+    margin-top: 5px;
+    }
   .content .who_we_are .span-20 {
     text-align: center;
     float: left;
@@ -2538,7 +2578,14 @@ header .main-menu {
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.025em; }
+      letter-spacing: 0.025em;
+      margin-left: 20px;
+      display: block;
+      margin: 0;
+      margin-top: 14px;
+      line-height: 16px;
+      margin-left: 15px;
+      }
 .content .gallery {
   padding-top: 1px; }
 
