@@ -4985,8 +4985,10 @@
   display: block;
   position: relative;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
+  letter-spacing: -0.1px;
+  margin-left: 10px;
 }
 
 /* line 367, ../sass/style.scss */
@@ -5800,7 +5802,7 @@ body:after {
 
 /* line 985, ../sass/style.scss */
 .call-spec {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -6211,6 +6213,8 @@ body.ready:before {
 /* line 1347, ../sass/style.scss */
 .row.more {
   margin-top: 8px;
+  position: absolute;
+  bottom: 0;
 }
 
 /* line 1351, ../sass/style.scss */
