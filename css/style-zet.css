@@ -6214,21 +6214,26 @@ body.ready:before {
 
 /* line 1347, ../sass/style.scss */
 .row.more {
-  margin-top: 8px;
+  margin-top: 1px;
   /* position: absolute; */
   bottom: 0;
+  padding-left: 0px;
 }
 
 /* line 1351, ../sass/style.scss */
 .content .icons .icon p.small.t-u {
   color: #464658;
   font-size: 12px;
-  top: 0;
+  top: 70px;
+  /* letter-spacing: -0.41px; */
+  position: absolute;
+  left: 0;
 }
 
 /* line 1355, ../sass/style.scss */
 .content #slider .base-link {
   line-height: 44px;
+  margin-left: 0;
 }
 
 /* line 1359, ../sass/style.scss */
@@ -7073,3 +7078,6 @@ pre strong {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.span-4.cost-box .base-link.call-spec {}

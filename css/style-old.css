@@ -1807,32 +1807,57 @@ footer {
   /* #menu is the original menu */ }
 .slider-nav {
   position: absolute;
-  top: 40%;
-  width: 100%; }
+  top: 230px;
+  width: 1493px;
+  margin: auto;
+  left: 10%;
+  }
   .slider-nav #slide-prev {
 
-    width: 45px;
-    height: 38px;
-    background: url("../img/blue_arrow_left.png");
-    right: auto;
-    text-indent: 999px;
-    overflow: hidden;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: 45px 28px;
-    padding: 0; }
+width: 45px;
+
+height: 38px;
+
+background: url("../img/blue_arrow_left.png");
+
+right: 140px;
+
+text-indent: 999px;
+
+overflow: hidden;
+
+position: absolute;
+
+background-repeat: no-repeat;
+
+background-size: 45px 28px;
+
+padding: 0;
+
+}
   .slider-nav #slide-next {
 
-    width: 45px;
-    height: 38px;
-    background: url("../img/blue_arrow_right.png");
-    left: auto;
-    position: absolute;
-    background-repeat: no-repeat;
-    text-indent: 999px;
-    overflow: hidden;
-    background-size: 45px 28px;
-    padding: 0; }
+width: 45px;
+
+height: 38px;
+
+background: url("../img/blue_arrow_right.png");
+
+right: 0;
+
+position: absolute;
+
+background-repeat: no-repeat;
+
+text-indent: 999px;
+
+overflow: hidden;
+
+background-size: 45px 28px;
+
+padding: 0;
+
+}
 
 .button-group:before, .button-group:after {
   content: " ";
@@ -2295,7 +2320,7 @@ footer {
   text-align: center;
   font-size: 14px;
   line-height: 28px;
-  margin-left: 31px;
+  margin-left: 7px;
   margin-bottom: 2px;
   height: 30px;
   /* margin-top: 6px; */
@@ -2443,18 +2468,24 @@ header .main-menu {
   /* left: 10px; */
   height: 100%;
   padding: 0;
-  top: 45px;
+  top: 74px;
   }
   .content .caption:last-child {
     margin-right: 0; }
 .content .icons {
-  margin-top: -10px;
+  margin-top: 4px;
+  /* margin-left: 16px; */
+  width: 700px;
+  height: 120px;
   }
   .content .icons .icon {
     float: left;
     display: block;
-    margin-right: 0.30581%;
-    width: 24.77064%; }
+    margin-right: 17px;
+    width: 127px;
+    margin-top: 16px;
+    position: relative;
+    }
     .content .icons .icon:last-child {
       margin-right: 0; }
     .content .icons .icon img {
