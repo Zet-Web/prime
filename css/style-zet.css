@@ -5739,7 +5739,7 @@ body:after {
 .logo {
   width: 250px;
   position: relative;
-  top: 6px;
+  top: 21px;
   left: 9px;
 }
 /* line 964, ../sass/style.scss */
@@ -5769,6 +5769,7 @@ body:after {
   margin-right: 1.69492%;
   position: relative;
   left: 13px;
+  padding-top: 6px;
 }
 
 /* line 981, ../sass/style.scss */
@@ -5780,6 +5781,7 @@ body:after {
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  margin-top: 10px;
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 23, ../sass/hover/effects/2d-transitions/_bob.scss */
@@ -5825,7 +5827,7 @@ body:after {
 
 /* line 989, ../sass/style.scss */
 header .main-menu ul li:after {
-  top: 7px;
+  top: 5px;
 }
 
 /* line 993, ../sass/style.scss */

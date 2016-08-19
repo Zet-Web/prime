@@ -95,13 +95,13 @@
 					display: block;
 					margin-bottom: 0;
 					position: relative;
-					top: 30px;
+					top: 10px;
 					letter-spacing: 0.2px;
 					left: 9px;
 					font-size: 36px;
 				}
 				.content .item .caption  .bold {
-					left: 10px;
+					left: 0px;
 					position: relative;
 					height: 50px;
 					display: block;

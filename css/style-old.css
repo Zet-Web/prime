@@ -1490,7 +1490,9 @@ margin-left: -15px;
   float: left;
   display: block;
   margin-right: 0.20367%;
-  width: 33.19756%; }
+  width: 33.19756%;
+  margin-top: 16px;
+  }
   .col-4:last-child {
     margin-right: 0; }
 
@@ -1670,11 +1672,12 @@ footer ul li a {
   text-align: center; }
 
 header {
-  height: 145px;
+  height: 115px;
   position: relative;
   z-index: 2;
   width: 100%;
-  display: block; }
+  display: block;
+  }
 
 /* Reset the container */
 .container {
@@ -2269,9 +2272,11 @@ footer {
   border-radius: 5px;
   border-bottom: 2px solid #008b9f;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 14px;
   padding-top: 8px;
-  margin-left: 90px;
+  margin-left: 46px;
+  height: 30px;
+  margin-top: 9px;
   }
   .call-spec:hover {
     background-color: #00ca90; }
@@ -2289,8 +2294,11 @@ footer {
   display: inline-block;
   text-align: center;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 28px;
   margin-left: 31px;
+  margin-bottom: 2px;
+  height: 30px;
+  /* margin-top: 6px; */
   }
   .get-cost:hover {
     background-color: #00afc8; }
@@ -2313,7 +2321,8 @@ header .tel {
   letter-spacing: -1.15px;
   position: relative;
   left: 17px;
-  top: 13px; }
+  top: 28px;
+  }
 header .feedback {
   font-size: 14px;
   line-height: 1.25em;
@@ -2321,10 +2330,12 @@ header .feedback {
   letter-spacing: 0.4px;
   position: relative;
   left: 18px;
-  top: 11px; }
+  top: 27px;
+  }
 header .main-menu {
   background-color: #464658;
-  margin-top: 13px;
+  margin-top: 19px;
+  /* padding-top: 15px; */
   }
   header .main-menu ul {
     height: 40px;
@@ -2337,7 +2348,7 @@ header .main-menu {
       }
       header .main-menu ul li a {
         font-size: 0.8125em;
-        line-height: 32px;
+        line-height: 40px;
         color: #ffffff;
         letter-spacing: 0.3px;
         }
@@ -2365,7 +2376,8 @@ header .main-menu {
         -ms-opacity: 0;
         -o-opacity: 0;
         opacity: 0;
-        top: 5px; }
+        top: 0px;
+        }
       header .main-menu ul li:hover:after {
         z-index: 9;
         filter: alpha(opacity=100);
@@ -2436,7 +2448,8 @@ header .main-menu {
   .content .caption:last-child {
     margin-right: 0; }
 .content .icons {
-  margin-top: 27px; }
+  margin-top: -10px;
+  }
   .content .icons .icon {
     float: left;
     display: block;
