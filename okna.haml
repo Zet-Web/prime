@@ -1,0 +1,316 @@
+!!! 5
+%html
+  %head
+    = Haml::Engine.new(File.read('partials/head.haml')).render
+  %body
+    = Haml::Engine.new(File.read('partials/header.haml')).render
+    .content
+      %section.cats
+        .container
+          .row
+            .span-3
+              %img(src="img/menu_icon_1.png")
+              %p.small.t-u Остекление балконов
+            .span-3
+              %img(src="img/menu_icon_2.png")
+              %p.small.t-u  Остекление квартир
+            .span-3
+              %img(src="img/menu_icon_3.png")
+              %p.small.t-u Остекление коттеджей
+            .span-3
+              %img(src="img/menu_icon_4.png")
+              %p.small.t-u Выберите дизайн окна
+      -# = Haml::Engine.new(File.read('partials/slider.haml')).render
+      %section.main-box.tabs
+        / TAB CONTROLLERS
+        %input#panel-1-ctrl.panel-radios{:checked => "", :name => "tab-radios", :type => "radio"}
+          %input#panel-2-ctrl.panel-radios{:name => "tab-radios", :type => "radio"}
+            %input#panel-3-ctrl.panel-radios{:name => "tab-radios", :type => "radio"}
+              %input#panel-4-ctrl.panel-radios{:name => "tab-radios", :type => "radio"}
+                %input#panel-5-ctrl.panel-radios{:name => "tab-radios", :type => "radio"}
+                  %input#nav-ctrl.panel-radios{:name => "nav-checkbox", :type => "checkbox"}
+                    / TABS LIST
+                    %ul#tabs-list
+                      .container
+
+                        %label#open-nav-label{:for => "nav-ctrl"}
+                        %li#li-for-panel-1
+                          %label.panel-label{:for => "panel-1-ctrl"} Radio Toggles
+                        /
+                          INLINE-BLOCK FIX
+                        %li#li-for-panel-2
+                          %label.panel-label{:for => "panel-2-ctrl"} Input :checked
+                        /
+                          INLINE-BLOCK FIX
+                        %li#li-for-panel-3
+                          %label.panel-label{:for => "panel-3-ctrl"} The Tabs
+                        /
+                          INLINE-BLOCK FIX
+                        %li#li-for-panel-4
+                          %label.panel-label{:for => "panel-4-ctrl"} Tab :hover
+                        /
+                          INLINE-BLOCK FIX
+                        %li#li-for-panel-5.last
+                          %label.panel-label{:for => "panel-5-ctrl"} Menu
+                        %label#close-nav-label{:for => "nav-ctrl"} Close
+                    / THE PANELS
+                    %article#panels
+                      .container
+                        %section#panel-1
+                          %main
+                            %h1 Radio Toggles
+                            %p
+                              In this demo,
+                              %code labels
+                              for hidden
+                              %code radios
+                              toggle the content. This is based on the behavior in which clicked
+                              %code labels
+                              for a
+                              %code radio
+                              or
+                              %code checkbox
+                              input will check that
+                              = succeed "." do
+                                %code input
+                            %pre
+                              :preserve
+                                &lt;input id="radio-1" type="radio" name="demo-radios"&gt;
+                                &lt;input id="radio-2" type="radio" name="demo-radios"&gt;                    \#radio-1:
+                            %input#radio-1{:name => "demo-radios", :type => "radio"}
+                              \#radio-2:
+                              %input#radio-2{:name => "demo-radios", :type => "radio"}
+                                %pre
+                                  :preserve
+                                    &lt;label for="radio-1"&gt;Toggle #radio-1&lt;/label&gt;
+                                    &lt;label for="radio-2"&gt;Toggle #radio-2&lt;/label&gt;                        %label.demo-label{:for => "radio-1"} Toggle #radio-1
+                                %label.demo-label{:for => "radio-2"} Toggle #radio-2
+                                %p Click one of the labels above and see its effect on the radios above it.
+                                %p The radios for this pen's tabs are displayed semi-transparently at the top of this demo page.
+                        %section#panel-2
+                          %main
+                            %h1 Input :checked
+                            %p
+                              In CSS, you can query based on the
+                              %code :checked
+                              selector for
+                              %code radios
+                              and
+                              %code checkboxes
+                              to style siblings down the DOM scope. To do this, we can use the
+                              = succeed "." do
+                                %code ~
+                              It will select same-level siblings after the given selector. Because the tab
+                              %code labels
+                              in this demo are nested and not immediate siblings, we will need to select their topmost parent that is at the same level as our
+                              = succeed "." do
+                                %code input
+                            %p To demonstrate, we will do a simplified version of this with a checkbox:
+                            %pre
+                              %strong &lt;!-- invisible input and its label --&gt;
+                              \&lt;input id="demo-child-toggle" type="checkbox"&gt;
+                              \&lt;label for="demo-child-toggle"&gt;Toggle #demo-child&lt;/label&gt;
+                              %strong &lt;-- parent to select first via "~" --&gt;
+                              \&lt;div id="demo-parent"&gt;
+                              %strong &lt;-- child to select through parent --&gt;
+                              \&lt;div id="demo-child"&gt;#demo-child&lt;/div&gt;
+                              \&lt;/div&gt;
+                            %p and in our CSS:
+                            %pre
+                              %strong /* hiding our checkbox */
+                              \#demo-child-toggle {
+                              display: none;
+                              }
+                              %strong /* selecting the child */
+                              \#demo-child-toggle:checked ~ #demo-parent #demo-child {
+                              color: #c0392b;
+                              font-weight: bold;
+                              text-transform: uppercase;
+                              }
+                            %hr
+                              %input#demo-child-toggle{:type => "checkbox"}
+                                %label.demo-label{:for => "demo-child-toggle"} Toggle #demo-child
+                                #demo-parent
+                                  #demo-child #demo-child
+                                %hr
+                                  %p As you can see, we can control the style of content that comes after a hidden input by toggling it via its label.
+                                  %p At this point you can probably get the picture for how we can conditionally display the tabbed panel content in this pen.
+                        %section#panel-3
+                          %main
+                            %h1 The Tabs
+                            %p Here is the basic form of a tab in this demo:
+                            %pre
+                              :preserve
+                                &lt;li id="li-for-panel-1"&gt;
+                                  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;
+                                &lt;/li&gt;                    %p
+                              For the "active" tab to cover the bottom border, the child
+                              %code label
+                              gets an additional 2 pixels of
+                              %code padding-top
+                              while its parent
+                              %code li
+                              gets a
+                              = succeed "." do
+                                %code translateY(1px)
+                              This not only covers the bottom border, but gives an ever-so-subtle "moving toward you" effect by shifting the title down
+                              = succeed "." do
+                                %code 1px
+                            %pre
+                              \#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+                              transform: translate3d(0, 1px, 0);
+                              }
+                              \#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
+                              padding-top: 26px;
+                              %strong /* instead of "24px" */
+                              }
+                        %section#panel-4
+                          %main
+                            %h1 Tab :hover
+                            %p
+                              When designing the
+                              %code :hover
+                              and "active" states I had a dilemma.
+                            %pre
+                              :preserve
+                                &lt;li id="li-for-panel-1"&gt;
+                                  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;
+                                &lt;/li&gt;                    %p
+                              Each tab
+                              %code li
+                              has a
+                              = succeed "." do
+                                %code border-right
+                              But when the additional
+                              %code border-top
+                              appears, we dont want the lighter
+                              %code border-right
+                              to be shown all the way to the top. The fix for this is to cancel the
+                              %code border-right
+                              on both the
+                              %code :hover
+                              and "active" state as well as style the
+                              = succeed "'s" do
+                                %code li
+                              next sibling's
+                              = succeed "." do
+                                %code border-left
+                            %p
+                              To do this, we can use a combination of the siblings after
+                              %code ~
+                              and sibling next
+                              %code +
+                              selectors:
+                            %pre
+                              %strong /* remove the right border on "active" state */
+                              \#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+                              border-right: none;
+                              }
+                              %strong /* add left to next sibling */
+                              \#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 + li {
+                              border-left: 1px solid #dfdfdf;
+                              }
+                        %section#panel-5
+                          %main
+                            %h1 Menu
+                            %p
+                              On small screens, the tabs fold down into an expandable menu. To trigger the menu, I use a
+                              %code checkbox
+                              (note that it appears at the top of the screen on smaller screen sizes). There are two labels that trigger this checkbox. One opens and the other closes the menu. The one that opens is absolutely positioned invisibly over the "active" menu item. The closing label is at the bottom of the open menu.
+                            %p
+                              The best way I have found to show and hide content without using absolute positioning is to use a combination of
+                              %code max-height
+                              and
+                              = succeed "." do
+                                %code opacity
+                              When "inactive", the content has a
+                              %code max-height: 0
+                              and
+                              = succeed "." do
+                                %code opacity: 0
+                            %p
+                              It also has a
+                              %code transition: opacity
+                              when I don't know the future height (this panel's content for example) and
+                              %code transition: opacity, max-height
+                              when I do know the future height (like the menu). When "active", the
+                              %code max-height
+                              and
+                              %code opacity
+                              get positive values and the content will transition in. I'm sure flexbox could get me around this hack, but this works for now.
+
+
+      %section.who_we_are
+        .container
+          .base-title.white  Мы не просто продавцы окон
+          %p.base-p
+            Компания «Окна Прайм» - это один из первых в России заводов - производителей конструкций из ПВХ с двенадцатилетним опытом!
+          .row
+            .span-20
+              .img-box
+                %img(src="img/preimushestvo_icon_1.png")
+              %p.small.t-u
+                ВЫБИРАЯ НАС,
+                %br
+                ВЫ ПОЛУЧАЕТЕ ГАРАНТИЮ
+                %br
+                КАЧЕСТВА ОТ ПРОИЗВОДИТЕЛЯ
+            .span-20
+              .img-box
+                %img(src="img/preimushestvo_icon_2.png")
+              %p.small.t-u
+                НЕ ПЕРЕПЛАЧИВАЕТЕ,
+                %br
+                А ПОКУПАЕТЕ ОКНА
+                %br
+                ПО ЗАВОДСКИМ ЦЕНАМ
+            .span-20
+              .img-box
+                %img(src="img/preimushestvo_icon_3.png")
+              %p.small.t-u
+                ПОЛУЧАЕТЕ
+                %br
+                ОКНА БЫСТРО
+                %br
+            .span-20
+              .img-box
+                %img(src="img/preimushestvo_icon_4.png")
+              %p.small.t-u
+                У НАС БОЛЕЕ 30 000
+                %br
+                СЧАСТЛИВЫХ ПОКУПАТЕЛЕЙ
+                %br
+            .span-20
+              .img-box
+                %img(src="img/preimushestvo_icon_5.png")
+              %p.small.t-u
+                БОЛЕЕ 20 000 ИЗ НИХ
+                %br
+                ДОВЕРИЛИ НАМ ТЕХНИЧЕСКИ
+                %br
+                СЛОЖНЫЕ ЗАКАЗЫ
+
+
+
+
+
+
+
+
+
+
+      %section.consult
+        .container
+          .free Бесплатная консультация ежедневно
+          .till с 8:00 до 23:00
+          .tel 8 (495) 204-26-56
+          .callback-form
+            %p
+              Оставьте свой номер телефона
+              и мы перезвоним Вам через 5 минут
+            %form
+              .input
+                %input.tele(type="text" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _")
+              .get-call
+                %a(href="#/") Заказать звонок
+    = Haml::Engine.new(File.read('partials/footer.haml')).render

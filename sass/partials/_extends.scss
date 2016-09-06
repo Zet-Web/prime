@@ -1,0 +1,182 @@
+@import "variables";
+//original selectors
+//#owl-demo2 .owl-item > div img, #owl-demo .owl-item > div img
+%link_box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  }
+
+%vcenter {
+  display: table-cell;
+  vertical-align: middle;
+  }
+
+%primary-btn {
+  height: 42px;
+  -webkit-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -khtml-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -moz-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -ms-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -o-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  background: #FFF;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
+  }
+
+%lg-btn {
+  -webkit-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -khtml-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -moz-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -ms-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  -o-box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  box-shadow: rgba(0, 1, 2, 0.18) 0px 2px 0px;
+  background: $blue;
+  font-size: 21px;
+  color:#ffffff;
+  line-height: 30px;
+  padding: 15px 70px;
+  text-transform: uppercase;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
+  }
+
+%alpha {margin-left: 0; }
+%omega { margin-right: 0; }
+
+.box-link {
+
+  display: block;
+  text-align: center;
+  }
+.after-box {
+  content: "";
+  position: absolute;
+  left: 0;
+  top:0;
+  }
+
+%primary_btn {
+  @include char_text(18px, 24px, #ffffff);
+  @include border-radius(50px);
+  text-decoration:none ;
+  padding: 8px 60px;
+  background: #7f657e;
+  text-transform: uppercase;
+  height: 40px;
+  &:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+    }
+  }
+
+
+  .row {
+    @include clear;
+  }
+
+  %base-h4-bold{
+     @include fchar-text(24px, 30px, #8a8a8a, $reg);
+}
+
+.base-h6 {
+  @include fchar-text(14px, 18px, #999999, $semi);
+
+}
+
+%slide-caption-1 {}
+%slide-caption-2 {}
+%slide-btn {}
+%footer-li-a {
+  @include fchar-text(13px, 21px, #999999, $light);
+
+}
+
+
+
+  %base-p-med {
+    @include fchar-text(24px, 30px, #8a8a8a, $reg);
+  }
+  %base-h3-med {
+    text-align: center;
+    @include fchar-text(30px, 38px, #8a8a8a, $semi);
+  }
+  %base-p-gray {
+    @include fchar-text(18px, 24px, #8a8a8a, $reg);
+    margin: 15px 0;
+  }
+  %base-h1 {
+    @include fchar-text(72px, 80px, #000000, $semi);
+    text-align: center;
+  }
+  %base-h2 {
+    @include fchar-text(48px, 60px, #000000, $semi);
+    text-align: center;
+    margin: 40px 0;
+  }
+  %base-h3 {
+    text-align: center;
+    @include fchar-text(30px, 38px, #8a8a8a, $reg);
+  }
+  %link-red {
+    @include fchar-text(36px, 42px, #ff4440, $semi);
+  }
+  %base-h4 {
+    text-align: center;
+    @include fchar-text(72px, 80px, #000000, $semi);
+    @include size(100%);
+  }
+  %base-button {
+    @include transition(all 0.5s ease);
+    @include button(20px 33px, transparent, #ffffff, 18px, 300, darken(#ff4440, 5%), 3px);
+    border: 1px solid #ff4440;
+    margin-bottom: 40px;
+    color: #ff4440;
+    margin-top: 40px;
+    &:hover {
+      color: #FFF;
+      background: #000;
+    }
+  }
+  %base-red {
+    color: $base-red;
+  }
+
+
+  #content .bg-white {
+    background-color: #ffffff !important;
+  }
+  #content .bg-gray {
+    background-color: #f8f8f8;
+  }
+  %base-p {
+    font-family: $reg;
+    @include char-text(18px, 24px, #FFF);
+    padding: 0 30px;
+  }
+  %bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  %base-iconbox {
+    @include size(158px, 158px);
+    text-align: center;
+    background-color: #f8f8f8;
+    @include border-radius(100%);
+    display: inline-block;
+    margin-bottom: 15px;
+  }

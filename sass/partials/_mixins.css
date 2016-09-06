@@ -1,0 +1,504 @@
+@charset "UTF-8";
+/*
+* *
+* * p {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+}
+* *
+ */
+/* @include font-face(Samplino, fonts/Samplino);*/
+/* @include font-face(Samplino, fonts/Samplino);*/
+/**
+ * Pseudo Content Mixin
+ *
+ * Allows for easy pseudo elements
+ * @author Josh Frankel <josh@joshfrankel.me>
+ */
+/*
+
+.sidebar {
+  @include pseudo-content ('before', 'images/icon-twitter.png', 20px, 20px, 0 0 no-repeat);
+}
+
+*/
+/* The mixin creates both of these rules by being placed inside .sidebar */
+.pseudo-el-text {
+  position: relative; }
+
+/* The parent selector output */
+.pseudo-el:before {
+  background: url("") 0 0 no-repeat;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  width: 20px; }
+
+/*** Mixin For Colors ***/
+/*** Mixin For Button ***/
+/***
+@include button(15px 10px, #333333, #ffffff, 16px, bold, lighten(#333333,5%),10px);
+
+@include button(padding, bgcolor, font-color, font-size, font-weight, hover-color, borderradius);
+
+
+
+***/
+/*
+ * Letter spacing function declaration
+ *
+ * Function accepts a value and then calculates the letter-spacing in em units
+ *
+ * @author Josh Frankel <josh@joshfrankel.me>
+ */
+h1.test-letter {
+  letter-spacing: 0.05em; }
+
+/* The calculated letter spacing */
+h1.test-letter {
+  letter-spacing: 0.05em; }
+
+/**
+ * Flexible Images - ╨У╨╕╨▒╨║╨╕╨╡ ╨║╨░╤А╤В╨╕╨╜╨║╨╕
+ */
+/*
+.container img {
+  @extend %flexible-images;
+}
+.sidebar img {
+  @extend %flexible-images;
+}
+footer .menu img {
+  @extend %flexible-images;
+}
+*/
+/* All styles are combined since they all use the same placeholder */
+                                                                     /*
+
+.container img,
+.sidebar img,
+footer .menu img {
+  height:auto;
+  width: 100%;
+}
+*/
+/* All styles are combined since they all use the same placeholder */
+.image-one {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.image-one {
+  background-image: url(""); }
+
+/* ╨Ч╨Р╨Я╨Ю╨Ы╨Э╨Ш╨в╨Х╨Ы╨м
+============================================= */
+.cta-btn, .main-btn, .info-btn {
+  padding: 10px;
+  color: #fff;
+  curser: pointer;
+  border: none;
+  shadow: none;
+  font-size: 14px;
+  width: 150px;
+  margin: 5px 0;
+  text-align: center;
+  display: block; }
+
+/* ╨Я╨а╨Ш╨Ь╨Х╨б╨м ╨Ъ╨Э╨Ю╨Я╨Ъ╨Ш
+============================================= */
+/* ╨Ъ╨Э╨Ю╨Я╨Ъ╨Ш
+============================================= */
+.cta-btn {
+  background-color: green; }
+  .cta-btn:hover {
+    background-color: #00b300; }
+
+.main-btn {
+  background-color: orange; }
+  .main-btn:hover {
+    background-color: #ffb733; }
+
+.info-btn {
+  background-color: blue; }
+  .info-btn:hover {
+    background-color: #3333ff; }
+
+/*╨Т╤Л╤З╨╕╤Б╨╗╨╡╨╜╨╕╤П*/
+.span-two {
+  width: 50%; }
+
+.span-three {
+  width: 33.33333%; }
+
+/* Reset rem to 10-based instead of default browser 16 */
+/*html {
+  font-size: 62.5%;
+}*/
+/*
+  Photoshop does not apply line height to the first row, which CSS does. This creates all kinds of havock.
+  To calculate the correct offset for the first line we need the font-size and the lineheight, i.e:
+
+  @include line-height(22,30);
+
+  in Photoshop points/px (but with no unit)
+*/
+/* Letter spacing is simpler.. stolen from somewhere */
+/* font-size to rem with backup, stolen from somewhere */
+/* Mixin */
+/* Mixin VERTICAL ALIGN */
+.element p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* Placeholder selector */
+.element p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* MIXIN CENTERER ABSOLUTELY */
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%, -50%);
+  -ms-transform: translateY(-50%, -50%);
+  transform: translateY(-50%, -50%); }
+
+.parent {
+  position: relative;
+  background: #f06d06;
+  width: 50%;
+  height: 200px;
+  margin: 20px auto; }
+
+.test-el {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+/*Another SCSS one with a different approach by Karl Merkli:
+@include rem-fallback(margin, 10, 20, 30, 40);
+*/
+/* @include rem-fallback(margin, 10, 20, 30, 40); */
+/*
+
+.arrow-right {
+  @include triangle(32px 24px, $purple, right);
+}
+
+
+.box-shadow {
+  width: 300px;
+  margin: 2em auto;
+  background-color: $gray;
+  box-shadow: 1px 1px 0 white;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+
+  &:before {
+    content: '';
+    @include triangle(32px, white, down);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -16px;
+  }
+
+  &:after {
+    content: '';
+    @include triangle(30px, $gray, down);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+  }
+}*/
+/*======= END TRIANGLE MIXIN ========*/
+/*Mixin ╨╛╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╤П ╨▒╨╛╤А╨┤╤О╤А╨░*/
+/*MIXIN ╨Э╨░╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨╜╨░ ╤Б╤Б╤Л╨╗╨║╨╕, hover active focus */
+/*Mixin Absolute Position*/
+/*Mixin ╨Ф╨╗╤П ╨▓╤Б╤В╨░╨▓╨║╨╕ REM ╨╡╨┤╨╕╨╜╨╕╤Ж╤Л Font-size*/
+/*MIXIN ╨Ф╨╗╤П Media Queries*/
+/*Mixin ╤Б╨║╤А╤Л╨▓╨░╨╡╤В ╤В╨╡╨║╤Б╤В Hide text*/
+/*Mixin Navigation List - ╨б╨┐╨╕╤Б╨╛╨║ ╨╜╨░╨▓╨╕╨│╨░╤Ж╨╕╨╕ ╨Я╤А╨╕╨╝╨╡╨╜╤П╨╡╤В╤Б╤П ╨┤╨╗╤П <UL>*/
+/*Hover Acive Focus*/
+/*** PADDING MIXIN***/
+/*** MARGIN MIXIN***/
+/*** LINK MIXIN***/
+/* .a {
+   @include size(100px, 100px);
+   @include char_text(16px, 20px, #FFF);
+   border: 1px solid #000;
+   background-color: #333333;
+   margin: 10px 0 0 10px;
+   padding: 10px 0 0 10px;
+   float:none;
+
+} */
+/* @include font-face(Samplino, fonts/Samplino);*/
+/**
+* Pseudo Content Mixin
+*
+* Allows for easy pseudo elements
+* @author Josh Frankel <josh@joshfrankel.me>
+*/
+/*
+
+.sidebar {
+@include pseudo-content ('before', 'images/icon-twitter.png', 20px, 20px, 0 0 no-repeat);
+}
+
+*/
+/* The mixin creates both of these rules by being placed inside .sidebar */
+.pseudo-el-text {
+  position: relative; }
+
+/* The parent selector output */
+.pseudo-el:before {
+  background: url("") 0 0 no-repeat;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  width: 20px; }
+
+/*** Mixin For Colors ***/
+/*** Mixin For Button ***/
+/***
+@include button(15px 10px, #333333, #ffffff, 16px, bold, lighten(#333333,5%),10px);
+
+@include button(padding, bgcolor, font-color, font-size, font-weight, hover-color, borderradius);
+
+
+
+***/
+/*
+* Letter spacing function declaration
+*
+* Function accepts a value and then calculates the letter-spacing in em units
+*
+* @author Josh Frankel <josh@joshfrankel.me>
+*/
+h1.test-letter {
+  letter-spacing: 0.05em; }
+
+/* The calculated letter spacing */
+h1.test-letter {
+  letter-spacing: 0.05em; }
+
+/**
+* Flexible Images - ╨У╨╕╨▒╨║╨╕╨╡ ╨║╨░╤А╤В╨╕╨╜╨║╨╕
+*/
+/*
+.container img {
+@extend %flexible-images;
+}
+.sidebar img {
+@extend %flexible-images;
+}
+footer .menu img {
+@extend %flexible-images;
+}
+*/
+/* All styles are combined since they all use the same placeholder */
+                                                                     /*
+
+.container img,
+.sidebar img,
+footer .menu img {
+height:auto;
+width: 100%;
+}
+*/
+/* All styles are combined since they all use the same placeholder */
+.image-one {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.image-one {
+  background-image: url(""); }
+
+/* ╨Ч╨Р╨Я╨Ю╨Ы╨Э╨Ш╨в╨Х╨Ы╨м
+============================================= */
+.cta-btn, .main-btn, .info-btn {
+  padding: 10px;
+  color: #fff;
+  curser: pointer;
+  border: none;
+  shadow: none;
+  font-size: 14px;
+  width: 150px;
+  margin: 5px 0;
+  text-align: center;
+  display: block; }
+
+/* ╨Я╨а╨Ш╨Ь╨Х╨б╨м ╨Ъ╨Э╨Ю╨Я╨Ъ╨Ш
+============================================= */
+/* ╨Ъ╨Э╨Ю╨Я╨Ъ╨Ш
+============================================= */
+.cta-btn {
+  background-color: green; }
+  .cta-btn:hover {
+    background-color: #00b300; }
+
+.main-btn {
+  background-color: orange; }
+  .main-btn:hover {
+    background-color: #ffb733; }
+
+.info-btn {
+  background-color: blue; }
+  .info-btn:hover {
+    background-color: #3333ff; }
+
+/*╨Т╤Л╤З╨╕╤Б╨╗╨╡╨╜╨╕╤П*/
+.span-two {
+  width: 50%; }
+
+.span-three {
+  width: 33.33333%; }
+
+/* Reset rem to 10-based instead of default browser 16 */
+/*html {
+font-size: 62.5%;
+}*/
+/*
+Photoshop does not apply line height to the first row, which CSS does. This creates all kinds of havock.
+To calculate the correct offset for the first line we need the font-size and the lineheight, i.e:
+
+@include line-height(22,30);
+
+in Photoshop points/px (but with no unit)
+*/
+/* Letter spacing is simpler.. stolen from somewhere */
+/* font-size to rem with backup, stolen from somewhere */
+/* Mixin */
+/* Mixin VERTICAL ALIGN */
+.element p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* Placeholder selector */
+.element p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* MIXIN CENTERER ABSOLUTELY */
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%, -50%);
+  -ms-transform: translateY(-50%, -50%);
+  transform: translateY(-50%, -50%); }
+
+.parent {
+  position: relative;
+  background: #f06d06;
+  width: 50%;
+  height: 200px;
+  margin: 20px auto; }
+
+.test-el {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+/*Another SCSS one with a different approach by Karl Merkli:
+@include rem-fallback(margin, 10, 20, 30, 40);
+*/
+/* @include rem-fallback(margin, 10, 20, 30, 40); */
+/*
+
+.arrow-right {
+@include triangle(32px 24px, $purple, right);
+}
+
+
+.box-shadow {
+width: 300px;
+margin: 2em auto;
+background-color: $gray;
+box-shadow: 1px 1px 0 white;
+color: #fff;
+padding: 20px;
+position: relative;
+
+&:before {
+content: '';
+@include triangle(32px, white, down);
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -16px;
+}
+
+&:after {
+content: '';
+@include triangle(30px, $gray, down);
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -15px;
+}
+}*/
+/*======= END TRIANGLE MIXIN ========*/
+/*Mixin ╨╛╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╤П ╨▒╨╛╤А╨┤╤О╤А╨░*/
+/*MIXIN ╨Э╨░╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨╜╨░ ╤Б╤Б╤Л╨╗╨║╨╕, hover active focus */
+/*Mixin Absolute Position*/
+/*Mixin ╨Ф╨╗╤П ╨▓╤Б╤В╨░╨▓╨║╨╕ REM ╨╡╨┤╨╕╨╜╨╕╤Ж╤Л Font-size*/
+/*MIXIN ╨Ф╨╗╤П Media Queries*/
+/*Mixin ╤Б╨║╤А╤Л╨▓╨░╨╡╤В ╤В╨╡╨║╤Б╤В Hide text*/
+/*Mixin Navigation List - ╨б╨┐╨╕╤Б╨╛╨║ ╨╜╨░╨▓╨╕╨│╨░╤Ж╨╕╨╕ ╨Я╤А╨╕╨╝╨╡╨╜╤П╨╡╤В╤Б╤П ╨┤╨╗╤П <UL>*/
+/*Hover Acive Focus*/
+/*** PADDING MIXIN***/
+/*** MARGIN MIXIN***/
+/*** LINK MIXIN***/
+.a {
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFF;
+  border: 1px solid #000;
+  background-color: #333333;
+  margin: 10px 0 0 10px;
+  padding: 10px 0 0 10px;
+  float: none; }
+
+/*** Mixin For Button ***/
+/***
+@include button(15px 10px, #333333, #ffffff, 16px, bold, lighten(#333333,5%),10px);
+
+@include button(padding, bgcolor, font-color, font-size, font-weight, hover-color, borderradius);
+
+
+
+***/
+
+/*# sourceMappingURL=_mixins.css.map */

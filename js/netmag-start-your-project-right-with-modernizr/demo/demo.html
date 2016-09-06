@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <head>
+        <title>Modernizr Example</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="normalize.css"> 
+        <link rel="stylesheet" href="demo-styles.css">
+        <script src="modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+        <script> 
+
+
+
+            //Effects for non-touchscreen devices using browsers that support canvas
+
+            Modernizr.load({
+
+                test: Modernizr.canvas && !Modernizr.touch,
+
+                yep: 'fancy-hover.js',
+
+                complete: function () { fancyHover.init($('ul#employeeList')); }
+
+            });
+
+        </script>
+
+        <style>
+
+            /*figcaption is hidden by default to avoid flash of unstyled content, so we adjust to show by default in the following cases */
+
+            .no-canvas ul#employeeList li figcaption { bottom:0 !important; }
+
+            .touch ul#employeeList li figcaption { bottom:0 !important; }
+
+        </style>
+    </head>
+
+    <body>
+
+        <ul id="employeeList">
+
+            <li>
+
+                <figure>
+
+                    <img src="img-people-chris-olberding.jpg" />
+
+                    <figcaption>
+
+                        <h2>Chris Olberding</h2>
+
+                        <h3>Creative Partner & CEO</h3>
+
+                    </figcaption>
+
+                </figure>
+
+            </li>
+
+            <li>
+
+                <figure>
+
+                    <img src="img-people-chris-lahey.jpg" />
+
+                    <figcaption>
+
+                        <h2>Chris Lahey</h2>
+
+                        <h3>Director of Development</h3>
+
+                    </figcaption>
+
+                </figure>
+
+            </li>
+
+            <li>
+
+                <figure>
+
+                    <img src="img-people-katharine-berry.jpg" />
+
+                    <figcaption>
+
+                        <h2>Katharine Berry</h2>
+
+                        <h3>Production Manager</h3>
+
+                    </figcaption>
+
+                </figure>
+
+            </li>
+
+                        <li>
+
+                <figure>
+
+                    <img src="img-people-mac-grossman.jpg" />
+
+                    <figcaption>
+
+                        <h2>Mac Grossman</h2>
+
+                        <h3>Senior Designer</h3>
+
+                    </figcaption>
+
+                </figure>
+
+            </li>
+
+            <li>
+
+                <figure>
+
+                    <img src="img-people-sean-collins.jpg" />
+
+                    <figcaption>
+
+                        <h2>Sean Collins</h2>
+
+                        <h3>UX Engineer</h3>
+
+                    </figcaption>
+
+                </figure>
+
+            </li>
+
+            <li>
+
+                <figure>
+
+                    <img src="img-people-barry-schulz.jpg" />
+
+                    <figcaption>
+
+                        <h2>Barry Schulz</h2>
+
+                        <h3>Web Developer</h3>
+
+                    </figcaption>
+
+                </figure>
+
+            </li>
+
+        </ul>
+        <h1>Modernizr Demo</h1>
+        <p><strong>Important.</strong> If the demo isn't working, you're likely trying to view it locally (i.e. file://) and in Chrome. Due to due to Chrome's Cross Origin policy in regards to canvas, you'll have to view it through a web server (e.g. localhost). You could also just pull it up in Firefox, Internet Explorer, or view it online at <a href="http://www.stationfour.com/modernizr-demo/">http://www.stationfour.com/modernizr-demo/</a>. If you have any question feel free to get in touch at <a href="mailto:olberding@stationfour.com">olberding@stationfour.com</a>.</p>
+        <h2>What's going on here?</h2>
+        <p>Using <a href="http://modernizr.com">Modernizr's detection library</a> and <a href="http://modernizr.com/docs/#load">Modernizr.load</a> the page tests if the current browser is a) not a touch enabled device and b) supports canvas. If both conditions are true 'fancy-hover.js' is loaded and initialized. fancy-hover.js uses jquery to slide each person's name and title in and out on have and uses canvas to dynamically create a grayscale version of each image. When the user hover overs one of the images, the grayscale versions of the other images are displayed.</p>
+        <p>If the page is pulled up in an older browser that doesn't support canvas (e.g. IE7) or a touch-enabled device (e.g. iPhone), each image's caption is displayed and there are no hover effects.</p>
+        <p>Alternatively, I could use a polyfil such as <a href="http://code.google.com/p/explorercanvas/wiki/Instructions" target="_parent">excanvas.js</a> for older browsers that do not support canvas natively.</p>
+
+    </body>
+</html>

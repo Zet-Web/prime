@@ -1,0 +1,78 @@
+@import "variables";
+@import "mixins";
+
+.base-title {
+  @include txt(36, 42px, #464658);
+  margin: 30px auto;
+  text-align: center;
+  font-weight:bold;
+
+  &.white {
+    color:#FFF;
+  }
+  // &:after {
+  //   content:"";
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: -4px;
+  //  background: #f7d1b5;
+  //  content: "";
+  //  width: 78px;
+  //  height: 4px;
+  //  display: inline-block;
+  //   z-index: 8;
+  //   // @include transition(all 0.5s ease);
+  // }
+}
+
+.base-h4 {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+  position: absolute;
+
+  b {
+    font-family: $bold;
+    letter-spacing: 1px;
+    display: block;
+    line-height: 30px;
+    font-size: 24px;
+  }
+}
+
+.row {
+
+}
+.base-h3 {}
+.base-h3-bold {}
+.base-more-btn {}
+.base-p-item {
+  color: #333;
+  font-size: 14px;
+
+  letter-spacing: 0.5px;
+}
+
+.base-p-content {}
+
+.base-h5 {
+  @include fchar_text(18px, 22px, $white, $bold);
+  letter-spacing: 1px;
+}
+
+.col-1 {@include span-columns(1);}
+.col-2 {@include span-columns(2);}
+.col-3 {@include span-columns(3);}
+.col-4 {@include span-columns(4);}
+.col-5 {@i                                                  nclude span-columns(5);}
+.col-6 {@include span-columns(6);}
+.col-7 {@include span-columns(7);}
+.col-8 {@include span-columns(8);}
+.col-9 {@include span-columns(9);}
+.col-10 {@include span-columns(10);}
+.col-11 {@include span-columns(11);}
+.col-12 {@include span-columns(12);}
+.col-20 {@include span-columns(2 of 10);}
+
