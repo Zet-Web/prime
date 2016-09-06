@@ -382,9 +382,9 @@
   }
 
   .slider-wrap {
-     height: 530px;
+     height: 520px;
      position: relative;
-     top: 31px;
+     top: 21px;
   }
 
   #slider .item a .caption {

@@ -6294,6 +6294,7 @@ body.ready:before {
 /* line 1381, ../sass/style.scss */
 .hero-carousel article {
   opacity: 0.5;
+  background-color: #FFF;
 }
 /* line 1383, ../sass/style.scss */
 .hero-carousel article.current {

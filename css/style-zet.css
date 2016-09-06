@@ -5781,7 +5781,7 @@ body:after {
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  margin-top: 10px;
+  margin-top: 0;
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 23, ../sass/hover/effects/2d-transitions/_bob.scss */
@@ -6234,6 +6234,9 @@ body.ready:before {
 .content #slider .base-link {
   line-height: 44px;
   margin-left: 0;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 15px;
 }
 
 /* line 1359, ../sass/style.scss */
@@ -6359,8 +6362,8 @@ body.ready:before {
 
 /* line 1405, ../sass/style.scss */
 .hero-carousel article .contents {
-  top: 415px;
-  left: 150px;
+     top: 455px;
+  left: 270px;
   padding: 10px;
   border-radius: 10px;
 }
@@ -7080,4 +7083,6 @@ pre strong {
 /*# sourceMappingURL=style.css.map */
 
 
-.span-4.cost-box .base-link.call-spec {}
+.span-4.cost-box .base-link.call-spec {
+    margin-left: 75px;
+}
