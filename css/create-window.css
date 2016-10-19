@@ -1,5 +1,5 @@
-.shad00 {width: 772px; height: 27px; background: url("/images/shad000.png") no-repeat left top; position: absolute; left:-42px; top: 584px; z-index: 200}
-.create-window{height: 582px;width: 1036px;position: relative;margin: 0 auto;z-index: 2;}
+.shad00 {width: 772px; height: 27px; background: url("../images/shad000.png") no-repeat left top; position: absolute; left:-42px; top: 584px; z-index: 200}
+.create-window{height: 582px;width: 1036px;position: relative;margin: 0 auto;z-index: 2;     margin-bottom: 110px;}
 .left-controls{position: absolute; top: 2px;left: 0}
 .right-controls{position: absolute; top: 10px;right: 6px;}
 .control-element{display: block;width: 140px;/* overflow: hidden; */height: 136px;position: relative;margin-bottom: 50px;text-align: center;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-transition: border 0.4s ease;transition: border 0.4s ease;border: solid 1px transparent;border-radius: 5px}
@@ -12,14 +12,14 @@
 .control-element.active span{background-color: #40afe1;color: #ffffff}
 .control-element.active .image-wrap{background-color: #fbfbfb;}
 .your-window{position: absolute;top: -2px;left: 175px;width: 700px;height: 585px;}
-.window-bg{position: absolute;left: 43px;top: 29px;background: url("/images/win0.jpg") ;width: 601px;height: 522px;opacity: 0.66;}
-.window-slop{position: absolute;left: 6px;top: 2px;background: url("/images/slop0.png") no-repeat left top;width: 677px;height: 566px; z-index: 40}
-.window-sill{position: absolute;left: -23px;  z-index: 15;top: 551px;background: url("/images/sill0.png")  no-repeat left top;width: 741px;height: 53px}
-.window-frame{position: absolute;left: 43px;top: 29px;background: url("/images/rama0.png");width: 602px;height: 522px; z-index: 20}
-.window-fittings{position: absolute;left: 43px;top: 29px;background: url("/images/fit0.png");width: 601px;height: 522px; z-index: 30}
+.window-bg{position: absolute;left: 43px;top: 29px;background: url("../images/win0.jpg") ;width: 601px;height: 522px;opacity: 0.66;}
+.window-slop{position: absolute;left: 6px;top: 2px;background: url("../images/slop0.png") no-repeat left top;width: 677px;height: 566px; z-index: 40}
+.window-sill{position: absolute;left: -23px;  z-index: 15;top: 551px;background: url("../images/sill0.png")  no-repeat left top;width: 741px;height: 53px}
+.window-frame{position: absolute;left: 43px;top: 29px;background: url("../images/rama0.png");width: 602px;height: 522px; z-index: 20}
+.window-fittings{position: absolute;left: 43px;top: 29px;background: url("../images/fit0.png");width: 601px;height: 522px; z-index: 30}
 .window-toning{position: absolute;left: 43px;top: 29px;width: 602px;height: 522px; z-index: 10}
 .window-layout{position: absolute;left: 43px;top: 29px;width: 602px;height: 522px; z-index: 15}
-.color-slider{width: 100%;height: 98px;position: absolute;left: 0;opacity: 0;bottom: 22px;z-index: 1;border-top: solid 1px #EAEAEA;background-color: rgba(255,255,255,.57);}
+.color-slider{width: 100%;height: 98px;position: absolute;left: 0;opacity: 0;bottom: 22px;z-index: 1;border-top: solid 1px #EAEAEA;background-color: rgba(255,255,255,.57);     bottom: -58px;}
 .color-slider:after{content:'';width: 100%;background: url("../img/design-shadow.png");height: 9px;position: absolute;left: 0;bottom: -9px;opacity: 1;}
 .multiple-items .slick-slide{width: 46px; height: 46px;position: relative;z-index: 5;}
 .multiple-items a{display: inline-block;vertical-align: top;width: 46px;height: 46px;position: relative;border-radius: 5px;z-index: 2}

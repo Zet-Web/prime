@@ -47,11 +47,11 @@
 			}
 
 		.hero-carousel-nav {
-			width: 980px;
+			width: 880px;
 			position: absolute;
 			bottom: 0;
 			left: 50%;
-			margin-left: -490px;
+			margin-left: -370px;
 			z-index: 2;
 			}
 
