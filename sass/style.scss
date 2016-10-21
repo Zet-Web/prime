@@ -966,7 +966,7 @@ footer {
   .base-title {}
   .row {
     .company-description {
-      @include span(6);
+      // @include span(6);
       p {
         color: #747482;
         font-size: 14px;
@@ -975,7 +975,7 @@ footer {
       }
     }
     .company-picture {
-      @include span(6);
+      // @include span(6);
       img {
 
       }
@@ -1051,4 +1051,34 @@ footer {
 
 }
 
-
+.title-md { @include char_text(24px, 34px, #464658)}
+.osteklenie {
+  .types-of-ostekl {
+    ul {
+      li {
+        a {
+          @include char_text(24px, 34px, #464658);
+        }
+      }
+    }
+  }
+}
+.we-decide {
+  background-color: #f6f6f6;
+  .title {
+    text-align: center;
+  }
+  .item {
+    float: left;
+    width:30%;
+    margin-right:20px;
+    height: 260px;
+    a {
+      @include char_text(18px, 24px, #464658);
+      letter-spacing: 1px;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}

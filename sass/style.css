@@ -583,7 +583,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -613,7 +613,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em; }
 
 label {
@@ -631,7 +631,7 @@ select[multiple=multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -713,7 +713,7 @@ th {
 
 body {
   color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-feature-settings: "kern", "liga", "pnum";
   font-size: 1em;
   line-height: 1.5; }
@@ -724,7 +724,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -753,7 +753,7 @@ picture {
 
 body {
   color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-feature-settings: "kern", "liga", "pnum";
   font-size: 1em;
   line-height: 1.5; }
@@ -764,7 +764,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -801,7 +801,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em; }
 
 label {
@@ -819,7 +819,7 @@ select[multiple=multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -904,25 +904,6 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit; }
-
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 8.14664%, transparent 8.14664%, transparent 8.35031%, #eee 8.35031%, #eee 16.49695%, transparent 16.49695%, transparent 16.70061%, #eee 16.70061%, #eee 24.84725%, transparent 24.84725%, transparent 25.05092%, #eee 25.05092%, #eee 33.19756%, transparent 33.19756%, transparent 33.40122%, #eee 33.40122%, #eee 41.54786%, transparent 41.54786%, transparent 41.75153%, #eee 41.75153%, #eee 49.89817%, transparent 49.89817%, transparent 50.10183%, #eee 50.10183%, #eee 58.24847%, transparent 58.24847%, transparent 58.45214%, #eee 58.45214%, #eee 66.59878%, transparent 66.59878%, transparent 66.80244%, #eee 66.80244%, #eee 74.94908%, transparent 74.94908%, transparent 75.15275%, #eee 75.15275%, #eee 83.29939%, transparent 83.29939%, transparent 83.50305%, #eee 83.50305%, #eee 91.64969%, transparent 91.64969%, transparent 91.85336%, #eee 91.85336%, #eee 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 8.14664%, transparent 8.14664%, transparent 8.35031%, #eee 8.35031%, #eee 16.49695%, transparent 16.49695%, transparent 16.70061%, #eee 16.70061%, #eee 24.84725%, transparent 24.84725%, transparent 25.05092%, #eee 25.05092%, #eee 33.19756%, transparent 33.19756%, transparent 33.40122%, #eee 33.40122%, #eee 41.54786%, transparent 41.54786%, transparent 41.75153%, #eee 41.75153%, #eee 49.89817%, transparent 49.89817%, transparent 50.10183%, #eee 50.10183%, #eee 58.24847%, transparent 58.24847%, transparent 58.45214%, #eee 58.45214%, #eee 66.59878%, transparent 66.59878%, transparent 66.80244%, #eee 66.80244%, #eee 74.94908%, transparent 74.94908%, transparent 75.15275%, #eee 75.15275%, #eee 83.29939%, transparent 83.29939%, transparent 83.50305%, #eee 83.50305%, #eee 91.64969%, transparent 91.64969%, transparent 91.85336%, #eee 91.85336%, #eee 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 8.14664%, transparent 8.14664%, transparent 8.35031%, #eee 8.35031%, #eee 16.49695%, transparent 16.49695%, transparent 16.70061%, #eee 16.70061%, #eee 24.84725%, transparent 24.84725%, transparent 25.05092%, #eee 25.05092%, #eee 33.19756%, transparent 33.19756%, transparent 33.40122%, #eee 33.40122%, #eee 41.54786%, transparent 41.54786%, transparent 41.75153%, #eee 41.75153%, #eee 49.89817%, transparent 49.89817%, transparent 50.10183%, #eee 50.10183%, #eee 58.24847%, transparent 58.24847%, transparent 58.45214%, #eee 58.45214%, #eee 66.59878%, transparent 66.59878%, transparent 66.80244%, #eee 66.80244%, #eee 74.94908%, transparent 74.94908%, transparent 75.15275%, #eee 75.15275%, #eee 83.29939%, transparent 83.29939%, transparent 83.50305%, #eee 83.50305%, #eee 91.64969%, transparent 91.64969%, transparent 91.85336%, #eee 91.85336%, #eee 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 8.14664%, transparent 8.14664%, transparent 8.35031%, #eee 8.35031%, #eee 16.49695%, transparent 16.49695%, transparent 16.70061%, #eee 16.70061%, #eee 24.84725%, transparent 24.84725%, transparent 25.05092%, #eee 25.05092%, #eee 33.19756%, transparent 33.19756%, transparent 33.40122%, #eee 33.40122%, #eee 41.54786%, transparent 41.54786%, transparent 41.75153%, #eee 41.75153%, #eee 49.89817%, transparent 49.89817%, transparent 50.10183%, #eee 50.10183%, #eee 58.24847%, transparent 58.24847%, transparent 58.45214%, #eee 58.45214%, #eee 66.59878%, transparent 66.59878%, transparent 66.80244%, #eee 66.80244%, #eee 74.94908%, transparent 74.94908%, transparent 75.15275%, #eee 75.15275%, #eee 83.29939%, transparent 83.29939%, transparent 83.50305%, #eee 83.50305%, #eee 91.64969%, transparent 91.64969%, transparent 91.85336%, #eee 91.85336%, #eee 100.0%, transparent 100.0%);
-  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 8.14664%, transparent 8.14664%, transparent 8.35031%, #eee 8.35031%, #eee 16.49695%, transparent 16.49695%, transparent 16.70061%, #eee 16.70061%, #eee 24.84725%, transparent 24.84725%, transparent 25.05092%, #eee 25.05092%, #eee 33.19756%, transparent 33.19756%, transparent 33.40122%, #eee 33.40122%, #eee 41.54786%, transparent 41.54786%, transparent 41.75153%, #eee 41.75153%, #eee 49.89817%, transparent 49.89817%, transparent 50.10183%, #eee 50.10183%, #eee 58.24847%, transparent 58.24847%, transparent 58.45214%, #eee 58.45214%, #eee 66.59878%, transparent 66.59878%, transparent 66.80244%, #eee 66.80244%, #eee 74.94908%, transparent 74.94908%, transparent 75.15275%, #eee 75.15275%, #eee 83.29939%, transparent 83.29939%, transparent 83.50305%, #eee 83.50305%, #eee 91.64969%, transparent 91.64969%, transparent 91.85336%, #eee 91.85336%, #eee 100.0%, transparent 100.0%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 1024px;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
 
 /*
 * *
@@ -1493,12 +1474,7 @@ margin-left: -15px;
     margin-right: 0; }
 
 .col-5 {
-  float: left;
-  display: block;
-  margin-right: 0.20367%;
-  width: 41.54786%; }
-  .col-5:last-child {
-    margin-right: 0; }
+  @i nclude span-columns(5); }
 
 .col-6 {
   float: left;
@@ -1685,13 +1661,14 @@ header {
   width: 100%;
   width: 100%; }
 
-html {
+html, * {
   font-size: 16px;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
+  font-family: 'PT Sans', sans-serif;
   /* 2 */ }
 
 .alpha {
@@ -1805,7 +1782,7 @@ footer {
   top: 40%;
   width: 100%; }
   .slider-nav #slide-prev {
-
+    left: 200px;
     width: 45px;
     height: 38px;
     background: url("../img/blue_arrow_left.png");
@@ -1817,11 +1794,10 @@ footer {
     background-size: 45px 28px;
     padding: 0; }
   .slider-nav #slide-next {
-
+    right: 200px;
     width: 45px;
     height: 38px;
     background: url("../img/blue_arrow_right.png");
-    left: auto;
     position: absolute;
     background-repeat: no-repeat;
     text-indent: 999px;
@@ -1838,9 +1814,6 @@ footer {
   display: none; }
 .button-group label {
   margin-bottom: 0; }
-  @media screen and (min-width: 53.75em) {
-    .button-group label {
-      float: left; } }
   .button-group label .button-group-item {
     background: transparent;
     border-left: 3px solid #f7d1b5;
@@ -1859,7 +1832,7 @@ footer {
     font-weight: 600;
     line-height: 1.5em;
     font-family: "PT Sans"; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 860px) {
       .button-group label .button-group-item {
         width: auto; } }
     .button-group label .button-group-item:focus, .button-group label .button-group-item:hover {
@@ -1868,7 +1841,7 @@ footer {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-top: 3px solid #f7d1b5; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 860px) {
       .button-group label:first-child .button-group-item {
         border-bottom-left-radius: 3px;
         border-left: 3px solid #f7d1b5;
@@ -2004,7 +1977,7 @@ footer {
   width: 100%; }
   .grid-items .grid-item.taller {
     height: 18.75em; }
-  @media screen and (min-width: 53.75em) {
+  @media screen and (min-width: 860px) {
     .grid-items .grid-item {
       width: 40%; } }
   .grid-items .grid-item:nth-child(1) {
@@ -2078,13 +2051,13 @@ footer {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5em;
   margin: auto; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 750px) {
     .grid-items .grid-item p {
       max-width: 70%; } }
-@media screen and (min-width: 53.75em) {
+@media screen and (min-width: 860px) {
   .grid-items .grid-item-big {
     width: 80%; } }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 750px) {
   .grid-items .grid-item-big p {
     max-width: 60%; } }
 .grid-items .grid-item-image {
@@ -2128,14 +2101,14 @@ footer {
         color: white;
         font-size: 1.6em;
         margin-bottom: 0.5em; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 860px) {
           .hero .hero-inner .hero-copy h1 {
             font-size: 1.8em; } }
       .hero .hero-inner .hero-copy p {
         color: white;
         line-height: 1.4em;
         margin: 0 auto 3em auto; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 860px) {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }
@@ -2173,7 +2146,7 @@ footer {
     padding: 2em;
     text-decoration: none;
     width: 100%; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 860px) {
       .grid-items-lines .grid-item {
         width: 40%; } }
     .grid-items-lines .grid-item:focus, .grid-items-lines .grid-item:hover {
@@ -2190,13 +2163,13 @@ footer {
   .grid-items-lines .grid-item p {
     color: rgba(51, 51, 51, 0.6);
     line-height: 1.5em; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 750px) {
       .grid-items-lines .grid-item p {
         max-width: 70%; } }
-  @media screen and (min-width: 53.75em) {
+  @media screen and (min-width: 860px) {
     .grid-items-lines .grid-item-big {
       width: 80%; } }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 750px) {
     .grid-items-lines .grid-item-big p {
       max-width: 60%; } }
   .grid-items-lines .bottom-cover {
@@ -2437,9 +2410,10 @@ header .main-menu {
     width: 24.84725%;
     text-align: center;
     height: 100%;
-    padding-top: 21px;
+    padding-top: 15px;
     border-right: 1px solid #82828f;
-    border-collapse: collapse; }
+    border-collapse: collapse;
+    margin-right: 0; }
     .content .cats .span-3:last-child {
       margin-right: 0; }
     .content .cats .span-3:first-child {
@@ -2519,10 +2493,81 @@ header .main-menu {
 .content .gallery {
   padding-top: 1px; }
 
-/*# sourceMappingURL=style.css.map */
-.logo {
-  width:50px;
-  height:60px;
-}
+.professionals .row .company-description p {
+  color: #747482;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; }
 
-@include size(50px, 60px);
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s; }
+  .carousel .container {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px; }
+  .carousel .item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 250px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px; }
+  .carousel .a {
+    transform: rotateY(0deg) translateZ(250px);
+    background: #ed1c24; }
+  .carousel .b {
+    transform: rotateY(60deg) translateZ(250px);
+    background: #0072bc; }
+  .carousel .c {
+    transform: rotateY(120deg) translateZ(250px);
+    background: #39b54a; }
+  .carousel .d {
+    transform: rotateY(180deg) translateZ(250px);
+    background: #f26522; }
+  .carousel .e {
+    transform: rotateY(240deg) translateZ(250px);
+    background: #630460; }
+  .carousel .f {
+    transform: rotateY(300deg) translateZ(250px);
+    background: #8c6239; }
+
+.title-md {
+  font-size: 24px;
+  line-height: 34px;
+  color: #464658; }
+
+.osteklenie .types-of-ostekl ul li a {
+  font-size: 24px;
+  line-height: 34px;
+  color: #464658; }
+
+.we-decide {
+  background-color: #f6f6f6; }
+  .we-decide .title {
+    text-align: center; }
+  .we-decide .item {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+    height: 260px; }
+    .we-decide .item a {
+      font-size: 18px;
+      line-height: 24px;
+      color: #464658;
+      letter-spacing: 1px;
+      display: block;
+      text-align: center;
+      font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
