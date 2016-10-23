@@ -743,8 +743,10 @@ header {
     margin-top: 15px;
   }
   .tel {
-    @include text(22, 26x, #464658);
+    @include text(22, 26, #464658);
     letter-spacing: -0.05em;
+    position: relative;
+    top: 9px;
   }
   .feedback {
     @include text(14, 20, #00ca90);
@@ -772,21 +774,21 @@ header {
         &:after {
           content: "";
           display: block;
-          height: 30px;
+          height: 43px;
           width: 140%;
           position:absolute;
           left:-20%;
-          background:rgba(255,255,255,1);
+          background:#00ca90;
           @include transition(all 0.5s ease);
           @include opacity(0);
-          top:5px;
+          top: 0;
         }
         &:hover:after {
           z-index: 9;
           @include opacity(1);
         }
         &:hover a {
-          color:#000;
+          color:#FFF;
           position:relative;
           z-index:555;
         }
@@ -865,10 +867,10 @@ footer {
       @include span-columns(3);
       text-align: center;
       height: 100%;
-      padding-top: 15px;
       border-right:1px solid #82828f;
       border-collapse: collapse;
       margin-right:0;
+      padding-top: 22px;
       &:first-child {
         border-left:1px solid #82828f;
         border-right:1px solid #82828f;
@@ -1257,6 +1259,47 @@ footer {
     position: relative;
     text-align: center;
   }
+  .item-cold {
+    position: absolute;
+    width: 315px;
+    height: 145px;
+    background: #FFF;
+    text-align: left;
+    padding: 20px 10px 0 20px;
+    h4 {
+      @include char_text(16px, 24px, #464658);
+    }
+    p {
+      @include char_text(14px, 20px, #464658);
+    }
+    &.cold-1 {
+      left:-20px;
+      top:0;
+    }
+    &.cold-2 {
+      left:-20px;
+      top:220px;
+    }
+    &.cold-3 {
+      left:-20px;
+      top:400px;
+    }
+    &.cold-4 {
+      right:-20px;
+      top:0;
+    }
+    &.cold-5 {
+      right:-20px;
+      top:190px;
+    }
+    &.cold-6 {
+    }
+  }
+}
+
+.ostekl-key .item-cold.cold-6 {
+  right: -20px;
+  top: 410px;
 }
 
 .osteklen-alyum {
@@ -1266,4 +1309,9 @@ footer {
   text-align: center;
   padding-top: 35px;
   font-weight: bold;
+}
+
+
+.ostekl-key .item-cold h4 {
+  margin-top: 0;
 }

@@ -2268,9 +2268,11 @@ header .description {
   margin-top: 15px; }
 header .tel {
   font-size: 1.375em;
-  line-height: 1.625xem;
+  line-height: 1.625em;
   color: #464658;
-  letter-spacing: -0.05em; }
+  letter-spacing: -0.05em;
+  position: relative;
+  top: 9px; }
 header .feedback {
   font-size: 0.875em;
   line-height: 1.25em;
@@ -2296,11 +2298,11 @@ header .main-menu {
       header .main-menu ul li:after {
         content: "";
         display: block;
-        height: 30px;
+        height: 43px;
         width: 140%;
         position: absolute;
         left: -20%;
-        background: white;
+        background: #00ca90;
         -webkit-transition: all 0.5s ease;
         -khtml-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
@@ -2315,7 +2317,7 @@ header .main-menu {
         -ms-opacity: 0;
         -o-opacity: 0;
         opacity: 0;
-        top: 5px; }
+        top: 0; }
       header .main-menu ul li:hover:after {
         z-index: 9;
         filter: alpha(opacity=100);
@@ -2327,7 +2329,7 @@ header .main-menu {
         -o-opacity: 1;
         opacity: 1; }
       header .main-menu ul li:hover a {
-        color: #000;
+        color: #FFF;
         position: relative;
         z-index: 555; }
 
@@ -2413,10 +2415,10 @@ header .main-menu {
     width: 24.84725%;
     text-align: center;
     height: 100%;
-    padding-top: 15px;
     border-right: 1px solid #82828f;
     border-collapse: collapse;
-    margin-right: 0; }
+    margin-right: 0;
+    padding-top: 22px; }
     .content .cats .span-3:last-child {
       margin-right: 0; }
     .content .cats .span-3:first-child {
@@ -2721,6 +2723,40 @@ header .main-menu {
   .ostekl-key .relative {
     position: relative;
     text-align: center; }
+  .ostekl-key .item-cold {
+    position: absolute;
+    width: 315px;
+    height: 145px;
+    background: #FFF;
+    text-align: left;
+    padding: 20px 10px 0 20px; }
+    .ostekl-key .item-cold h4 {
+      font-size: 16px;
+      line-height: 24px;
+      color: #464658; }
+    .ostekl-key .item-cold p {
+      font-size: 14px;
+      line-height: 20px;
+      color: #464658; }
+    .ostekl-key .item-cold.cold-1 {
+      left: -20px;
+      top: 0; }
+    .ostekl-key .item-cold.cold-2 {
+      left: -20px;
+      top: 220px; }
+    .ostekl-key .item-cold.cold-3 {
+      left: -20px;
+      top: 400px; }
+    .ostekl-key .item-cold.cold-4 {
+      right: -20px;
+      top: 0; }
+    .ostekl-key .item-cold.cold-5 {
+      right: -20px;
+      top: 190px; }
+
+.ostekl-key .item-cold.cold-6 {
+  right: -20px;
+  top: 410px; }
 
 .osteklen-alyum {
   padding-bottom: 30px; }
@@ -2729,5 +2765,8 @@ header .main-menu {
   text-align: center;
   padding-top: 35px;
   font-weight: bold; }
+
+.ostekl-key .item-cold h4 {
+  margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
