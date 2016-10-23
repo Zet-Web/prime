@@ -1,3 +1,6 @@
+.osteklen-alyum .right-c {
+  float: right;
+}
 @charset "utf-8";
 //@import "partials/fonts";
 @import "susy";
@@ -1081,4 +1084,186 @@ footer {
       font-weight: bold;
     }
   }
+}
+.types-of-ostekl {
+  ul {
+    padding-top: 10px;
+    li {
+      a {
+        @include char_text(28px, 32px, #464658);
+      }
+    }
+  }
+}
+.w460 {
+  width:400px;
+  float:left;
+}
+.structure {
+  font-size: 36px;
+  color:#464658;
+  .col-6.mr-0 {
+    width:52.5%;
+  }
+  .item4 {
+   float: left;
+   width: 130px;
+   height: 120px;
+   text-align: center;
+   line-height: 18px;
+   font-size: 14px;
+   color: #464658;
+  }
+  h4.title-md {
+    font-size: 36px;
+    color:#464658;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  .base-p {
+    font-size: 14px;
+    line-height: 22px;
+    color:#464658;
+  }
+}
+.mr-0 {
+  margin-right: 0;
+}
+
+.gray {
+  background:#f6f6f6;
+}
+.structure.gray {
+  padding: 30px 0;
+}
+
+.osteklenie {
+    padding: 20px 0 10px;
+}
+.osteklen-alyum {
+  .right-c {
+    .counter {
+      border:1px solid #e0e0d7;
+    }
+    @include size(320px, 260px);
+    .top-form {
+      height:68px;
+      border-bottom: 1px solid #e0e0d7;
+      text-align: center;
+      padding-top:10px;
+      background:#f9f9f6;
+      .cost{
+        font-size: 20px;
+        font-weight: bold;
+        color:#464659;
+      }
+      .sum {
+        font-size: 28px;
+        color:#00a676;
+        font-weight: bold;
+      }
+    }
+    .md-form {
+      text-align: center;
+      border-bottom: 1px solid #e0e0d7;
+      padding-top: 20px;
+      background: #f9f9f6;
+      .get-cost {
+        @include size(230px, 38px);
+        @include char_text(20px, 54px, #ffffff);
+      }
+      p {
+        @include char_text(14px, 22px, #a0a0a7);
+      }
+    }
+    .bt-form {
+      background:#ffffe2;
+      text-align: center;
+      padding-top:1px;
+      padding:5px 0;
+      .feed-call {
+        @include char_text(22px, 54px, #464658);
+      }
+      .get-call {
+        @include char_text(14px, 54px, #00ca90);
+      }
+    }
+  }
+  .advantages {
+    .item {
+      width: 75px;
+      display: inline-block;
+      margin-right: 100px;
+      text-align: center;
+
+    &:nth-of-type(4) {
+      margin-right: 0;
+    }
+    p {
+      line-height: 22px;
+      font-size: 14px;
+      color:#464658;
+    }
+    }
+  }
+  .left-c {
+    width: 680px;
+    float: left;
+  }
+}
+
+.osteklen-alyum .right-c .md-form .get-cost {
+  line-height: 36px;
+}
+.osteklen-alyum h4 {
+  @include char_text(24px, 30px, #464658);
+}
+
+
+
+.osteklen-alyum p {
+  @include char_text(14px, 22px, #464658);
+}
+.osteklen-alyum h4 {
+  font-weight: bold;
+}
+
+.osteklen-alyum .right-c .bt-form .feed-call {
+  line-height: 34px;
+  letter-spacing: -0.85px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+
+.osteklen-alyum .right-c .bt-form .get-call {
+  line-height: 24px;
+  position: relative;
+  top: -7px;
+  border-bottom: 1px dashed #00ca90;
+  &:hover {
+    border-bottom: 0;
+  }
+}
+
+.ostekl-key {
+  background-color: #f6f6f6;
+  padding-bottom: 60px;
+  h2 {
+    @include char_text(36px, 40px, #464658);
+  }
+  .relative {
+    position: relative;
+    text-align: center;
+  }
+}
+
+.osteklen-alyum {
+  padding-bottom: 30px;
+}
+.ostekl-key h2 {
+  text-align: center;
+  padding-top: 35px;
+  font-weight: bold;
 }

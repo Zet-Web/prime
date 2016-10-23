@@ -214,8 +214,7 @@ body, html, * {
   display: none;
   }
 
-  .item {height:420px;
-  }
+
 
   .owl-controls .owl-page.active span {
         background: #FFF;
