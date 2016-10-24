@@ -103,229 +103,247 @@
       <section class='main-box tabs'>
         <!-- TAB CONTROLLERS -->
         <input checked='' class='panel-radios' id='panel-1-ctrl' name='tab-radios' type='radio'>
-          <input class='panel-radios' id='panel-2-ctrl' name='tab-radios' type='radio'>
-            <input class='panel-radios' id='panel-3-ctrl' name='tab-radios' type='radio'>
-              <input class='panel-radios' id='panel-4-ctrl' name='tab-radios' type='radio'>
-                <input class='panel-radios' id='panel-5-ctrl' name='tab-radios' type='radio'>
-                  <input class='panel-radios' id='nav-ctrl' name='nav-checkbox' type='checkbox'>
-                    <!-- TABS LIST -->
-                    <ul id='tabs-list'>
-                      <div class='container'>
-                        <label for='nav-ctrl' id='open-nav-label'></label>
-                        <li id='li-for-panel-1'>
-                          <label class='panel-label' for='panel-1-ctrl'>Radio Toggles</label>
-                        </li>
-                        <!--
-                          INLINE-BLOCK FIX
-                        -->
-                        <li id='li-for-panel-2'>
-                          <label class='panel-label' for='panel-2-ctrl'>Input :checked</label>
-                        </li>
-                        <!--
-                          INLINE-BLOCK FIX
-                        -->
-                        <li id='li-for-panel-3'>
-                          <label class='panel-label' for='panel-3-ctrl'>The Tabs</label>
-                        </li>
-                        <!--
-                          INLINE-BLOCK FIX
-                        -->
-                        <li id='li-for-panel-4'>
-                          <label class='panel-label' for='panel-4-ctrl'>Tab :hover</label>
-                        </li>
-                        <!--
-                          INLINE-BLOCK FIX
-                        -->
-                        <li class='last' id='li-for-panel-5'>
-                          <label class='panel-label' for='panel-5-ctrl'>Menu</label>
-                        </li>
-                        <label for='nav-ctrl' id='close-nav-label'>Close</label>
+        <input class='panel-radios' id='panel-2-ctrl' name='tab-radios' type='radio'>
+        <input class='panel-radios' id='panel-3-ctrl' name='tab-radios' type='radio'>
+        <input class='panel-radios' id='panel-4-ctrl' name='tab-radios' type='radio'>
+        <input class='panel-radios' id='panel-5-ctrl' name='tab-radios' type='radio'>
+        <input class='panel-radios' id='nav-ctrl' name='nav-checkbox' type='checkbox'>
+        <!-- TABS LIST -->
+        <ul id='tabs-list'>
+          <div class='container'>
+            <label for='nav-ctrl' id='open-nav-label'></label>
+            <li id='li-for-panel-1'>
+              <label class='panel-label' for='panel-1-ctrl'>Standart</label>
+            </li>
+            <!--
+            INLINE-BLOCK FIX
+            -->
+            <li id='li-for-panel-2'>
+              <label class='panel-label' for='panel-2-ctrl'>Classic</label>
+            </li>
+            <!--
+            INLINE-BLOCK FIX
+            -->
+            <li id='li-for-panel-3'>
+              <label class='panel-label' for='panel-3-ctrl'>Premium</label>
+            </li>
+            <!--
+            INLINE-BLOCK FIX
+            -->
+            <li id='li-for-panel-4'>
+              <label class='panel-label' for='panel-4-ctrl'>Подоконники</label>
+            </li>
+            <!--
+            INLINE-BLOCK FIX
+            -->
+            <li class='last' id='li-for-panel-5'>
+              <label class='panel-label' for='panel-5-ctrl'>Откосы</label>
+            </li>
+            <label for='nav-ctrl' id='close-nav-label'>Close</label>
+          </div>
+        </ul>
+        <!-- THE PANELS -->
+        <article id='panels'>
+
+          <div class='container'>
+            <section id='panel-1'>
+              <main>
+              <div id="slider-wrap">
+                <ul id="slider">
+                  <li data-color="">
+                    <img src="images/okno-choose.jpg" alt="">
+                    <div class="descr">
+                      <div class="min-descr">
+                        <h3 class="title-descr">Окна Prime Standart</h3>
+                        <p>Окна KBE Engine - экономное решение для установки пластиковых окон в квартире или офисе. Монтажная ширина 58 мм прекрасно подойдет для Российских климатических условий, максимальная толщина стеклопакета 32 мм обеспечит достойную теплоизоляцию и звукоизоляцию.</p>
                       </div>
-                    </ul>
-                    <!-- THE PANELS -->
-                    <article id='panels'>
-                      <div class='container'>
-                        <section id='panel-1'>
-                          <main>
-                            <h1>Radio Toggles</h1>
-                            <p>
-                              In this demo,
-                              <code>labels</code>
-                              for hidden
-                              <code>radios</code>
-                              toggle the content. This is based on the behavior in which clicked
-                              <code>labels</code>
-                              for a
-                              <code>radio</code>
-                              or
-                              <code>checkbox</code>
-                              input will check that
-                              <code>input</code>.
-                            </p>
-                            <pre>&lt;input id="radio-1" type="radio" name="demo-radios"&gt;&#x000A;&lt;input id="radio-2" type="radio" name="demo-radios"&gt;                    \#radio-1:</pre>
-                            <input id='radio-1' name='demo-radios' type='radio'>
-                              #radio-2:
-                              <input id='radio-2' name='demo-radios' type='radio'>
-                                <pre>&lt;label for="radio-1"&gt;Toggle #radio-1&lt;/label&gt;&#x000A;&lt;label for="radio-2"&gt;Toggle #radio-2&lt;/label&gt;                        %label.demo-label{:for => "radio-1"} Toggle #radio-1</pre>
-                                <label class='demo-label' for='radio-2'>Toggle #radio-2</label>
-                                <p>Click one of the labels above and see its effect on the radios above it.</p>
-                                <p>The radios for this pen's tabs are displayed semi-transparently at the top of this demo page.</p>
-                              </input>
-                            </input>
-                          </main>
-                        </section>
-                        <section id='panel-2'>
-                          <main>
-                            <h1>Input :checked</h1>
-                            <p>
-                              In CSS, you can query based on the
-                              <code>:checked</code>
-                              selector for
-                              <code>radios</code>
-                              and
-                              <code>checkboxes</code>
-                              to style siblings down the DOM scope. To do this, we can use the
-                              <code>~</code>.
-                              It will select same-level siblings after the given selector. Because the tab
-                              <code>labels</code>
-                              in this demo are nested and not immediate siblings, we will need to select their topmost parent that is at the same level as our
-                              <code>input</code>.
-                            </p>
-                            <p>To demonstrate, we will do a simplified version of this with a checkbox:</p>
-                            <pre><strong>&lt;!-- invisible input and its label --&gt;</strong>
-                            &lt;input id="demo-child-toggle" type="checkbox"&gt;
-                            &lt;label for="demo-child-toggle"&gt;Toggle #demo-child&lt;/label&gt;
-                            <strong>&lt;-- parent to select first via "~" --&gt;</strong>
-                            &lt;div id="demo-parent"&gt;
-                            <strong>&lt;-- child to select through parent --&gt;</strong>
-                            &lt;div id="demo-child"&gt;#demo-child&lt;/div&gt;
-                            &lt;/div&gt;</pre>
-                            <p>and in our CSS:</p>
-                            <pre><strong>/* hiding our checkbox */</strong>
-                            #demo-child-toggle {
-                            display: none;
-                            }
-                            <strong>/* selecting the child */</strong>
-                            #demo-child-toggle:checked ~ #demo-parent #demo-child {
-                            color: #c0392b;
-                            font-weight: bold;
-                            text-transform: uppercase;
-                            }</pre>
-                            <hr>
-                              <input id='demo-child-toggle' type='checkbox'>
-                                <label class='demo-label' for='demo-child-toggle'>Toggle #demo-child</label>
-                                <div id='demo-parent'>
-                                  <div id='demo-child'>#demo-child</div>
-                                </div>
-                                <hr>
-                                  <p>As you can see, we can control the style of content that comes after a hidden input by toggling it via its label.</p>
-                                  <p>At this point you can probably get the picture for how we can conditionally display the tabbed panel content in this pen.</p>
-                                </hr>
-                              </input>
-                            </hr>
-                          </main>
-                        </section>
-                        <section id='panel-3'>
-                          <main>
-                            <h1>The Tabs</h1>
-                            <p>Here is the basic form of a tab in this demo:</p>
-                            <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
-                            For the "active" tab to cover the bottom border, the child
-                            <code>label</code>
-                            gets an additional 2 pixels of
-                            <code>padding-top</code>
-                            while its parent
-                            <code>li</code>
-                            gets a
-                            <code>translateY(1px)</code>.                            This not only covers the bottom border, but gives an ever-so-subtle "moving toward you" effect by shifting the title down
-                            <code>1px</code>.</pre>
-                            <pre>#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
-                            transform: translate3d(0, 1px, 0);
-                            }
-                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
-                            padding-top: 26px;
-                            <strong>/* instead of "24px" */</strong>
-                            }</pre>
-                          </main>
-                        </section>
-                        <section id='panel-4'>
-                          <main>
-                            <h1>Tab :hover</h1>
-                            <p>
-                              When designing the
-                              <code>:hover</code>
-                              and "active" states I had a dilemma.
-                            </p>
-                            <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
-                            Each tab
-                            <code>li</code>
-                            has a
-                            <code>border-right</code>.                            But when the additional
-                            <code>border-top</code>
-                            appears, we dont want the lighter
-                            <code>border-right</code>
-                            to be shown all the way to the top. The fix for this is to cancel the
-                            <code>border-right</code>
-                            on both the
-                            <code>:hover</code>
-                            and "active" state as well as style the
-                            <code>li</code>'s                            next sibling's
-                            <code>border-left</code>.</pre>
-                            <p>
-                              To do this, we can use a combination of the siblings after
-                              <code>~</code>
-                              and sibling next
-                              <code>+</code>
-                              selectors:
-                            </p>
-                            <pre><strong>/* remove the right border on "active" state */</strong>
-                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
-                            border-right: none;
-                            }
-                            <strong>/* add left to next sibling */</strong>
-                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 + li {
-                            border-left: 1px solid #dfdfdf;
-                            }</pre>
-                          </main>
-                        </section>
-                        <section id='panel-5'>
-                          <main>
-                            <h1>Menu</h1>
-                            <p>
-                              On small screens, the tabs fold down into an expandable menu. To trigger the menu, I use a
-                              <code>checkbox</code>
-                              (note that it appears at the top of the screen on smaller screen sizes). There are two labels that trigger this checkbox. One opens and the other closes the menu. The one that opens is absolutely positioned invisibly over the "active" menu item. The closing label is at the bottom of the open menu.
-                            </p>
-                            <p>
-                              The best way I have found to show and hide content without using absolute positioning is to use a combination of
-                              <code>max-height</code>
-                              and
-                              <code>opacity</code>.
-                              When "inactive", the content has a
-                              <code>max-height: 0</code>
-                              and
-                              <code>opacity: 0</code>.
-                            </p>
-                            <p>
-                              It also has a
-                              <code>transition: opacity</code>
-                              when I don't know the future height (this panel's content for example) and
-                              <code>transition: opacity, max-height</code>
-                              when I do know the future height (like the menu). When "active", the
-                              <code>max-height</code>
-                              and
-                              <code>opacity</code>
-                              get positive values and the content will transition in. I'm sure flexbox could get me around this hack, but this works for now.
-                            </p>
-                          </main>
-                        </section>
+                      <div class="advantages">
+                        <h5 class="title-adv">Основные преимущества:</h5>
+                        <img src="images/adv1.jpg" alt="">
+                        <img src="images/adv2.jpg" alt="">
+                        <img src="images/adv3.jpg" alt="">
                       </div>
-                    </article>
-                  </input>
-                </input>
+                      <div class="cost-of">
+                        <span>Стоимость:</span>
+                        <span class="price">от 3800 руб.</span>
+                      </div>
+                      <div class="get-cost">
+                        <a href="#/" class="btn get-cost">Рассчитать стоимость</a>
+                        <div class="your-choose">* по вашим размерам</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-color="#3498db">
+                    <img src="images/osteken2.jpg" alt="">
+                  </li>
+                  <li data-color="#9b59b6">
+                    <img src="images/osteken3.jpg" alt="">
+                  </li>
+                </ul>
+                <!--controls-->
+                <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+                <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+                <div id="counter"></div>
+                <div id="pagination-wrap">
+                  <ul>
+                  </ul>
+                </div>
+                <!--controls-->
+              </div>
+              </main>
+            </section>
+            <section id='panel-2'>
+              <main>
+              <h1>Input :checked</h1>
+              <p>
+                In CSS, you can query based on the
+                <code>:checked</code>
+                selector for
+                <code>radios</code>
+                and
+                <code>checkboxes</code>
+                to style siblings down the DOM scope. To do this, we can use the
+                <code>~</code>.
+                It will select same-level siblings after the given selector. Because the tab
+                <code>labels</code>
+                in this demo are nested and not immediate siblings, we will need to select their topmost parent that is at the same level as our
+                <code>input</code>.
+              </p>
+              <p>To demonstrate, we will do a simplified version of this with a checkbox:</p>
+                                                        <pre><strong>&lt;!-- invisible input and its label --&gt;</strong>
+                                                            &lt;input id="demo-child-toggle" type="checkbox"&gt;
+                                                            &lt;label for="demo-child-toggle"&gt;Toggle #demo-child&lt;/label&gt;
+                                                            <strong>&lt;-- parent to select first via "~" --&gt;</strong>
+                                                            &lt;div id="demo-parent"&gt;
+                                                            <strong>&lt;-- child to select through parent --&gt;</strong>
+                                                            &lt;div id="demo-child"&gt;#demo-child&lt;/div&gt;
+              &lt;/div&gt;</pre>
+              <p>and in our CSS:</p>
+                                                        <pre><strong>/* hiding our checkbox */</strong>
+                                                            #demo-child-toggle {
+                                                            display: none;
+                                                            }
+                                                            <strong>/* selecting the child */</strong>
+                                                            #demo-child-toggle:checked ~ #demo-parent #demo-child {
+                                                            color: #c0392b;
+                                                            font-weight: bold;
+                                                            text-transform: uppercase;
+              }</pre>
+              <hr>
+              <input id='demo-child-toggle' type='checkbox'>
+              <label class='demo-label' for='demo-child-toggle'>Toggle #demo-child</label>
+              <div id='demo-parent'>
+                <div id='demo-child'>#demo-child</div>
+              </div>
+              <hr>
+              <p>As you can see, we can control the style of content that comes after a hidden input by toggling it via its label.</p>
+              <p>At this point you can probably get the picture for how we can conditionally display the tabbed panel content in this pen.</p>
+              </hr>
               </input>
-            </input>
-          </input>
+              </hr>
+              </main>
+            </section>
+            <section id='panel-3'>
+              <main>
+              <h1>The Tabs</h1>
+              <p>Here is the basic form of a tab in this demo:</p>
+                                                        <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
+                                                            For the "active" tab to cover the bottom border, the child
+                                                            <code>label</code>
+                                                            gets an additional 2 pixels of
+                                                            <code>padding-top</code>
+                                                            while its parent
+                                                            <code>li</code>
+                                                            gets a
+                                                            <code>translateY(1px)</code>.                            This not only covers the bottom border, but gives an ever-so-subtle "moving toward you" effect by shifting the title down
+              <code>1px</code>.</pre>
+                                                        <pre>#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+                                                            transform: translate3d(0, 1px, 0);
+                                                            }
+                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
+                                                            padding-top: 26px;
+                                                            <strong>/* instead of "24px" */</strong>
+              }</pre>
+              </main>
+            </section>
+            <section id='panel-4'>
+              <main>
+              <h1>Tab :hover</h1>
+              <p>
+                When designing the
+                <code>:hover</code>
+                and "active" states I had a dilemma.
+              </p>
+                                                        <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
+                                                            Each tab
+                                                            <code>li</code>
+                                                            has a
+                                                            <code>border-right</code>.                            But when the additional
+                                                            <code>border-top</code>
+                                                            appears, we dont want the lighter
+                                                            <code>border-right</code>
+                                                            to be shown all the way to the top. The fix for this is to cancel the
+                                                            <code>border-right</code>
+                                                            on both the
+                                                            <code>:hover</code>
+                                                            and "active" state as well as style the
+                                                            <code>li</code>'s                            next sibling's
+              <code>border-left</code>.</pre>
+              <p>
+                To do this, we can use a combination of the siblings after
+                <code>~</code>
+                and sibling next
+                <code>+</code>
+                selectors:
+              </p>
+                                                        <pre><strong>/* remove the right border on "active" state */</strong>
+                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+                                                            border-right: none;
+                                                            }
+                                                            <strong>/* add left to next sibling */</strong>
+                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 + li {
+                                                            border-left: 1px solid #dfdfdf;
+              }</pre>
+              </main>
+            </section>
+            <section id='panel-5'>
+              <main>
+              <h1>Menu</h1>
+              <p>
+                On small screens, the tabs fold down into an expandable menu. To trigger the menu, I use a
+                <code>checkbox</code>
+                (note that it appears at the top of the screen on smaller screen sizes). There are two labels that trigger this checkbox. One opens and the other closes the menu. The one that opens is absolutely positioned invisibly over the "active" menu item. The closing label is at the bottom of the open menu.
+              </p>
+              <p>
+                The best way I have found to show and hide content without using absolute positioning is to use a combination of
+                <code>max-height</code>
+                and
+                <code>opacity</code>.
+                When "inactive", the content has a
+                <code>max-height: 0</code>
+                and
+                <code>opacity: 0</code>.
+              </p>
+              <p>
+                It also has a
+                <code>transition: opacity</code>
+                when I don't know the future height (this panel's content for example) and
+                <code>transition: opacity, max-height</code>
+                when I do know the future height (like the menu). When "active", the
+                <code>max-height</code>
+                and
+                <code>opacity</code>
+                get positive values and the content will transition in. I'm sure flexbox could get me around this hack, but this works for now.
+              </p>
+              </main>
+            </section>
+          </div>
+        </article>
+        </input>
+        </input>
+        </input>
+        </input>
+        </input>
         </input>
       </section>
       <section class='who_we_are'>

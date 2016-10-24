@@ -6419,8 +6419,7 @@ label.panel-label:hover {
 }
 /* line 1555, ../sass/style.scss */
 #panels .container {
-  margin: 0 auto;
-  width: 90%;
+
 }
 /* line 1561, ../sass/style.scss */
 #panels section header label.panel-label {

@@ -2769,4 +2769,15 @@ header .main-menu {
 .ostekl-key .item-cold h4 {
   margin-top: 0; }
 
+.main-box.tabs #tabs-list li {
+  width: 9%;
+  display: inline-block; }
+
+#panels section main {
+  width: 100%;
+  padding: 0; }
+
+ul#tabs-list {
+  text-align: left !important; }
+
 /*# sourceMappingURL=style.css.map */
