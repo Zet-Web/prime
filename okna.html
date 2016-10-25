@@ -144,51 +144,38 @@
         </ul>
         <!-- THE PANELS -->
         <article id='panels'>
-
           <div class='container'>
             <section id='panel-1'>
               <main>
-              <div id="slider-wrap">
-                <ul id="slider">
-                  <li data-color="">
-                    <img src="images/okno-choose.jpg" alt="">
-                    <div class="descr">
-                      <div class="min-descr">
-                        <h3 class="title-descr">Окна Prime Standart</h3>
-                        <p>Окна KBE Engine - экономное решение для установки пластиковых окон в квартире или офисе. Монтажная ширина 58 мм прекрасно подойдет для Российских климатических условий, максимальная толщина стеклопакета 32 мм обеспечит достойную теплоизоляцию и звукоизоляцию.</p>
-                      </div>
-                      <div class="advantages">
-                        <h5 class="title-adv">Основные преимущества:</h5>
-                        <img src="images/adv1.jpg" alt="">
-                        <img src="images/adv2.jpg" alt="">
-                        <img src="images/adv3.jpg" alt="">
-                      </div>
-                      <div class="cost-of">
-                        <span>Стоимость:</span>
-                        <span class="price">от 3800 руб.</span>
-                      </div>
-                      <div class="get-cost">
-                        <a href="#/" class="btn get-cost">Рассчитать стоимость</a>
-                        <div class="your-choose">* по вашим размерам</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li data-color="#3498db">
-                    <img src="images/osteken2.jpg" alt="">
-                  </li>
-                  <li data-color="#9b59b6">
-                    <img src="images/osteken3.jpg" alt="">
-                  </li>
-                </ul>
-                <!--controls-->
-                <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-                <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-                <div id="counter"></div>
-                <div id="pagination-wrap">
-                  <ul>
-                  </ul>
+              <div class="fl-left"><img src="images/okno-choose.jpg" alt="">
+                <span class="caption-descr">* Стандартное белое окно размер 1,4м х 1.4м</span>
+              </div>
+              <div class="description-window">
+                <div class="min-descr">
+                  <h3 class="title-descr">Окна Prime Standart</h3>
+                  <p>Окна KBE Engine - экономное решение для установки пластиковых окон в квартире или офисе. Монтажная ширина 58 мм прекрасно подойдет для Российских климатических условий, максимальная толщина стеклопакета 32 мм обеспечит достойную теплоизоляцию и звукоизоляцию.</p>
                 </div>
-                <!--controls-->
+                <div class="advantages">
+                  <h5 class="title-adv">Основные преимущества:</h5>
+                  <div class="adv"><img src="images/advant-1.jpg" alt="">
+                    Теплоизоляция
+                  </div>
+                  <div class="adv"><img src="images/advant-2.jpg" alt="">
+                    Герметичность
+                  </div>
+                  <div class="adv"><img src="images/advant-3.jpg" alt="">
+                    Герметичность
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="cost-of">
+                  <span class="label-price">Стоимость:</span>
+                  <span class="price">от 3800 руб.</span>
+                </div>
+                <div class="get-count">
+                  <a href="#/" class="btn get-cost-btn">Рассчитать стоимость</a>
+                  <div class="your-choose">* по вашим размерам</div>
+                </div>
               </div>
               </main>
             </section>
@@ -210,24 +197,24 @@
                 <code>input</code>.
               </p>
               <p>To demonstrate, we will do a simplified version of this with a checkbox:</p>
-                                                        <pre><strong>&lt;!-- invisible input and its label --&gt;</strong>
-                                                            &lt;input id="demo-child-toggle" type="checkbox"&gt;
-                                                            &lt;label for="demo-child-toggle"&gt;Toggle #demo-child&lt;/label&gt;
-                                                            <strong>&lt;-- parent to select first via "~" --&gt;</strong>
-                                                            &lt;div id="demo-parent"&gt;
-                                                            <strong>&lt;-- child to select through parent --&gt;</strong>
-                                                            &lt;div id="demo-child"&gt;#demo-child&lt;/div&gt;
+                                                                                    <pre><strong>&lt;!-- invisible input and its label --&gt;</strong>
+                                                                                            &lt;input id="demo-child-toggle" type="checkbox"&gt;
+                                                                                            &lt;label for="demo-child-toggle"&gt;Toggle #demo-child&lt;/label&gt;
+                                                                                            <strong>&lt;-- parent to select first via "~" --&gt;</strong>
+                                                                                            &lt;div id="demo-parent"&gt;
+                                                                                            <strong>&lt;-- child to select through parent --&gt;</strong>
+                                                                                            &lt;div id="demo-child"&gt;#demo-child&lt;/div&gt;
               &lt;/div&gt;</pre>
               <p>and in our CSS:</p>
-                                                        <pre><strong>/* hiding our checkbox */</strong>
-                                                            #demo-child-toggle {
-                                                            display: none;
-                                                            }
-                                                            <strong>/* selecting the child */</strong>
-                                                            #demo-child-toggle:checked ~ #demo-parent #demo-child {
-                                                            color: #c0392b;
-                                                            font-weight: bold;
-                                                            text-transform: uppercase;
+                                                                                    <pre><strong>/* hiding our checkbox */</strong>
+                                                                                            #demo-child-toggle {
+                                                                                            display: none;
+                                                                                            }
+                                                                                            <strong>/* selecting the child */</strong>
+                                                                                            #demo-child-toggle:checked ~ #demo-parent #demo-child {
+                                                                                            color: #c0392b;
+                                                                                            font-weight: bold;
+                                                                                            text-transform: uppercase;
               }</pre>
               <hr>
               <input id='demo-child-toggle' type='checkbox'>
@@ -247,22 +234,22 @@
               <main>
               <h1>The Tabs</h1>
               <p>Here is the basic form of a tab in this demo:</p>
-                                                        <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
-                                                            For the "active" tab to cover the bottom border, the child
-                                                            <code>label</code>
-                                                            gets an additional 2 pixels of
-                                                            <code>padding-top</code>
-                                                            while its parent
-                                                            <code>li</code>
-                                                            gets a
-                                                            <code>translateY(1px)</code>.                            This not only covers the bottom border, but gives an ever-so-subtle "moving toward you" effect by shifting the title down
+                                                                                    <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
+                                                                                            For the "active" tab to cover the bottom border, the child
+                                                                                            <code>label</code>
+                                                                                            gets an additional 2 pixels of
+                                                                                            <code>padding-top</code>
+                                                                                            while its parent
+                                                                                            <code>li</code>
+                                                                                            gets a
+                                                                                            <code>translateY(1px)</code>.                            This not only covers the bottom border, but gives an ever-so-subtle "moving toward you" effect by shifting the title down
               <code>1px</code>.</pre>
-                                                        <pre>#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
-                                                            transform: translate3d(0, 1px, 0);
-                                                            }
-                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
-                                                            padding-top: 26px;
-                                                            <strong>/* instead of "24px" */</strong>
+                                                                                    <pre>#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+                                                                                            transform: translate3d(0, 1px, 0);
+                                                                                            }
+                                                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
+                                                                                            padding-top: 26px;
+                                                                                            <strong>/* instead of "24px" */</strong>
               }</pre>
               </main>
             </section>
@@ -274,20 +261,20 @@
                 <code>:hover</code>
                 and "active" states I had a dilemma.
               </p>
-                                                        <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
-                                                            Each tab
-                                                            <code>li</code>
-                                                            has a
-                                                            <code>border-right</code>.                            But when the additional
-                                                            <code>border-top</code>
-                                                            appears, we dont want the lighter
-                                                            <code>border-right</code>
-                                                            to be shown all the way to the top. The fix for this is to cancel the
-                                                            <code>border-right</code>
-                                                            on both the
-                                                            <code>:hover</code>
-                                                            and "active" state as well as style the
-                                                            <code>li</code>'s                            next sibling's
+                                                                                    <pre>&lt;li id="li-for-panel-1"&gt;&#x000A;  &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;&#x000A;&lt;/li&gt;                    %p
+                                                                                            Each tab
+                                                                                            <code>li</code>
+                                                                                            has a
+                                                                                            <code>border-right</code>.                            But when the additional
+                                                                                            <code>border-top</code>
+                                                                                            appears, we dont want the lighter
+                                                                                            <code>border-right</code>
+                                                                                            to be shown all the way to the top. The fix for this is to cancel the
+                                                                                            <code>border-right</code>
+                                                                                            on both the
+                                                                                            <code>:hover</code>
+                                                                                            and "active" state as well as style the
+                                                                                            <code>li</code>'s                            next sibling's
               <code>border-left</code>.</pre>
               <p>
                 To do this, we can use a combination of the siblings after
@@ -296,13 +283,13 @@
                 <code>+</code>
                 selectors:
               </p>
-                                                        <pre><strong>/* remove the right border on "active" state */</strong>
-                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
-                                                            border-right: none;
-                                                            }
-                                                            <strong>/* add left to next sibling */</strong>
-                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 + li {
-                                                            border-left: 1px solid #dfdfdf;
+                                                                                    <pre><strong>/* remove the right border on "active" state */</strong>
+                                                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+                                                                                            border-right: none;
+                                                                                            }
+                                                                                            <strong>/* add left to next sibling */</strong>
+                                                                                            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 + li {
+                                                                                            border-left: 1px solid #dfdfdf;
               }</pre>
               </main>
             </section>
@@ -345,6 +332,33 @@
         </input>
         </input>
         </input>
+        </input>
+      </section>
+      <section class="teh-chars">
+        <div class="container">
+          <div class="inner-rel">
+          <div class="left-c">
+            <p>Технические характеристики</p>
+            <div class="bold">профиля Prime Standart</div>
+            <div class="ads">
+              <div class="adv-icon"></div>
+              <div class="adv-icon"></div>
+              <div class="adv-icon"></div>
+              <div class="adv-icon"></div>
+            </div>
+          </div>
+            <img src="images/okno.jpg" alt="">
+          <div class="right-c">
+          <ul>
+            <li>Профильная система 58 мм</li>
+             <li>Стеклопакет толщиной 32 мм</li>
+             <li>3-х камерный профиль</li>
+             <li>Глянцевая поверхность</li>
+             <li>Экологичный профиль (без свинца)</li>
+            </ul>
+          </div>
+          </div>
+        </div>
       </section>
       <section class='who_we_are'>
         <div class='container'>

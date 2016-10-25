@@ -1462,3 +1462,156 @@ footer {}
 ul#tabs-list {
   text-align: left !important;
 }
+.description-window {
+  background-color: #f9f9f6;
+  width: 460px;
+  height: 500px;
+  float: left;
+  margin-left: 35px;
+  .min-descr {
+    height: 174px;
+    border-bottom:1px solid #e0e0d7;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    .title-descr {
+      @include char_text(24px, 28px, #464658);
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    p {
+      @include char_text(14px, 20px, #464658);
+    }
+
+  }
+  .advantages {
+    padding-left: 35px;
+    clear: both;
+    height: 156px;
+    border-bottom: 1px solid #e0e0d7;
+    padding-top: 12px;
+    h5 {
+      font-weight: bold;
+    }
+      .adv {
+        width:30%;
+        float:left;
+        font-size:14px;
+        color:#464658;
+        text-align:center;
+      }
+    }
+}
+.fl-left {
+  float:left;
+  width:450px;
+}
+.cost-of {
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+  .label-price {
+    @include char_text(20px, 24px, #464658);
+    font-weight: bold;
+  }
+  .price {
+    @include char_text(28px, 32px, #00a676);
+    font-weight: bold;
+  }
+}
+
+.get-count {
+  background-color: #e6e6de;
+  height: 94px;
+  padding-top: 18px;
+  .get-cost-btn {
+    @include size(230px, 42px);
+    @include char_text(20px, 36px, #FFF);
+    font-weight: bold;
+    text-align:center;
+    background: #00ca90;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #00a676;
+    line-height: 42px;
+    margin: auto;
+  }
+  .your-choose {
+    @include char_text(14px, 22px, #a0a0a7);
+  }
+}
+
+
+.get-count .your-choose {
+  text-align: center;
+  margin-top: 5px;
+}
+.caption-descr {
+  @include char_text(14px, 36px, #a0a0a7);
+  text-align: center;
+  display: block;
+}
+.teh-chars {
+  background-color: #f6f6f6;
+  padding-top: 15px;
+  .bold {
+    @include char_text(36px, 40px, #333333);
+    font-weight: bold;
+  }
+  .inner-rel {
+    position: relative;
+    text-align:center;
+    .left-c {
+      width: 380px;
+      height: 320px;
+      position: absolute;
+      top: 130px;
+      .ads {
+        .adv-icon {
+          @include size(166px, 46px);
+        }
+      }
+      p {
+        @include char_text(30px, 40px, #333333);
+      }
+
+    }
+  }
+  .right-c {
+    width:320px;
+    height:190px;
+    background:#FFF;
+    position:absolute;
+    right:0;
+    top:100px;
+    text-align:left;
+    padding-left:30px;
+    padding-top:20px;
+    ul {
+      li {
+        @include char_text(16px, 30px, #333333);
+        &:before {
+          content:"";
+          @include size(6px);
+          background:#00ca90;
+          left:0;
+          top:13px;
+          display:inline-block;
+          position:absolute;
+        }
+      }
+    }
+  }
+}
+
+.teh-chars .inner-rel .left-c p {
+  margin-bottom: 0;
+}
+.slider-wrap .item {
+  height:420px;
+}
+
+.teh-chars .right-c ul li {
+  position: relative;
+  padding-left: 15px;;
+}
